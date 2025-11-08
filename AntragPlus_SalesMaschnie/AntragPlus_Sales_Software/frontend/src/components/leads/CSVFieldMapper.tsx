@@ -111,90 +111,91 @@ export function CSVFieldMapper({ csvColumns, onComplete, onBack }: CSVFieldMappe
       )}
 
       {/* Mapping List - Simple Left/Right Layout */}
-      <div className="space-y-2">
+      <div className="space-y-3">
         {csvColumns.map((csvCol, index) => {
           const isUsedByOther = mappings.some((m, i) => i !== index && m.dbField === mappings[index].dbField && m.dbField !== 'skip' && m.dbField !== 'new')
           
           return (
-            <div key={index} className="flex items-center gap-4 p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-300 transition-colors">
-              {/* Left: CSV Column Name */}
-              <div className="w-1/3">
-                <span className="font-mono text-sm font-semibold text-gray-900 bg-blue-50 px-3 py-2 rounded block text-center">
-                  {csvCol}
-                </span>
-              </div>
-
-              {/* Arrow */}
-              <ArrowRightIcon className="h-5 w-5 text-gray-400 flex-shrink-0" />
-
-              {/* Right: Dropdown */}
-              <div className="flex-1">
-                <select
-                  value={mappings[index].dbField}
-                  onChange={(e) => handleMappingChange(index, e.target.value)}
-                  className={`w-full rounded-lg border px-4 py-2 text-sm font-medium focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 ${
-                    mappings[index].dbField === 'skip' 
-                      ? 'border-gray-300 text-gray-500' 
-                      : isUsedByOther
-                      ? 'border-orange-300 bg-orange-50 text-orange-700'
-                      : 'border-green-300 bg-green-50 text-green-700'
-                  }`}
-                >
-                  <option value="skip">— Überspringen —</option>
-                  <optgroup label="Standard Felder">
-                    {STANDARD_FIELDS.map(field => {
-                      const alreadyMapped = mappings.some((m, i) => i !== index && m.dbField === field.value)
-                      return (
-                        <option 
-                          key={field.value} 
-                          value={field.value}
-                          disabled={alreadyMapped}
-                        >
-                          {field.label} {field.required ? '(Pflicht)' : ''} {alreadyMapped ? '(Bereits gemappt)' : ''}
-                        </option>
-                      )
-                    })}
-                  </optgroup>
-                  <option value="new">➕ Neues Feld erstellen...</option>
-                </select>
-              </div>
-            </div>
-
-            {/* New Field Configuration */}
-            {mappings[index].dbField === 'new' && (
-              <div className="mt-4 pl-4 border-l-2 border-cyan-500 space-y-3">
-                <div>
-                  <label className="text-xs font-medium text-gray-700 mb-1 block">
-                    Neuer Feldname
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="z.B. jahresumsatz, mitgliederzahl"
-                    value={mappings[index].newFieldName || ''}
-                    onChange={(e) => handleNewFieldConfig(index, e.target.value, mappings[index].newFieldType || 'text')}
-                    className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500"
-                  />
+            <div key={index} className="space-y-3">
+              <div className="flex items-center gap-4 p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-300 transition-colors">
+                {/* Left: CSV Column Name */}
+                <div className="w-1/3">
+                  <span className="font-mono text-sm font-semibold text-gray-900 bg-blue-50 px-3 py-2 rounded block text-center">
+                    {csvCol}
+                  </span>
                 </div>
-                <div>
-                  <label className="text-xs font-medium text-gray-700 mb-1 block">
-                    Feldtyp
-                  </label>
+
+                {/* Arrow */}
+                <ArrowRightIcon className="h-5 w-5 text-gray-400 flex-shrink-0" />
+
+                {/* Right: Dropdown */}
+                <div className="flex-1">
                   <select
-                    value={mappings[index].newFieldType || 'text'}
-                    onChange={(e) => handleNewFieldConfig(index, mappings[index].newFieldName || '', e.target.value)}
-                    className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                    value={mappings[index].dbField}
+                    onChange={(e) => handleMappingChange(index, e.target.value)}
+                    className={`w-full rounded-lg border px-4 py-2 text-sm font-medium focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 ${
+                      mappings[index].dbField === 'skip' 
+                        ? 'border-gray-300 text-gray-500' 
+                        : isUsedByOther
+                        ? 'border-orange-300 bg-orange-50 text-orange-700'
+                        : 'border-green-300 bg-green-50 text-green-700'
+                    }`}
                   >
-                    <option value="text">Text</option>
-                    <option value="email">E-Mail</option>
-                    <option value="phone">Telefon</option>
-                    <option value="url">URL</option>
-                    <option value="number">Zahl</option>
-                    <option value="date">Datum</option>
+                    <option value="skip">— Überspringen —</option>
+                    <optgroup label="Standard Felder">
+                      {STANDARD_FIELDS.map(field => {
+                        const alreadyMapped = mappings.some((m, i) => i !== index && m.dbField === field.value)
+                        return (
+                          <option 
+                            key={field.value} 
+                            value={field.value}
+                            disabled={alreadyMapped}
+                          >
+                            {field.label} {field.required ? '(Pflicht)' : ''} {alreadyMapped ? '(Bereits gemappt)' : ''}
+                          </option>
+                        )
+                      })}
+                    </optgroup>
+                    <option value="new">➕ Neues Feld erstellen...</option>
                   </select>
                 </div>
               </div>
-            )}
-          </div>
+
+              {/* New Field Configuration */}
+              {mappings[index].dbField === 'new' && (
+                <div className="ml-12 pl-4 border-l-2 border-cyan-500 space-y-3 py-3">
+                  <div>
+                    <label className="text-xs font-medium text-gray-700 mb-1 block">
+                      Neuer Feldname
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="z.B. jahresumsatz, mitgliederzahl"
+                      value={mappings[index].newFieldName || ''}
+                      onChange={(e) => handleNewFieldConfig(index, e.target.value, mappings[index].newFieldType || 'text')}
+                      className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-xs font-medium text-gray-700 mb-1 block">
+                      Feldtyp
+                    </label>
+                    <select
+                      value={mappings[index].newFieldType || 'text'}
+                      onChange={(e) => handleNewFieldConfig(index, mappings[index].newFieldName || '', e.target.value)}
+                      className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                    >
+                      <option value="text">Text</option>
+                      <option value="email">E-Mail</option>
+                      <option value="phone">Telefon</option>
+                      <option value="url">URL</option>
+                      <option value="number">Zahl</option>
+                      <option value="date">Datum</option>
+                    </select>
+                  </div>
+                </div>
+              )}
+            </div>
           )
         })}
       </div>
