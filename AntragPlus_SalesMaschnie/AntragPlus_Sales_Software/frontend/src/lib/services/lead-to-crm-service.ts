@@ -215,8 +215,8 @@ export class LeadToCRMService {
    * Create Deal for Contact in "Start" stage
    */
   private async createDealForContact(contactId: number, lead: any, createdBy: string): Promise<number> {
-    // Estimate deal value based on org size
-    const estimatedValue = this.estimateDealValue(lead)
+    // Calculate deal value: 10% of betrag from CSV, or estimate from org size
+    const estimatedValue = this.calculateDealValue(lead)
 
     const result = await db.query(
       `INSERT INTO internal_deals (
@@ -323,7 +323,23 @@ export class LeadToCRMService {
   }
 
   /**
-   * Estimate deal value based on organization size
+   * Calculate deal value: 10% of betrag OR estimate from org size
+   */
+  private calculateDealValue(lead: any): number {
+    // Priority 1: Use 10% of betrag from CSV
+    if (lead.custom_fields?.betrag) {
+      const betrag = parseFloat(lead.custom_fields.betrag.toString().replace(/[^\d.-]/g, ''))
+      if (!isNaN(betrag) && betrag > 0) {
+        return Math.round(betrag * 0.10) // 10% vom Betrag
+      }
+    }
+
+    // Priority 2: Estimate based on org size
+    return this.estimateDealValue(lead)
+  }
+
+  /**
+   * Estimate deal value based on organization size (fallback)
    */
   private estimateDealValue(lead: any): number {
     const employeeStr = lead.employees_estimate?.toLowerCase() || ''
