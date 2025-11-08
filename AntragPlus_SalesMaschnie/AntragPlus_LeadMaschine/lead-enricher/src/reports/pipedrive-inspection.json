@@ -1,0 +1,2328 @@
+{
+  "timestamp": "2025-10-29T19:35:52.601Z",
+  "summary": {
+    "totalDeals": 1996,
+    "totalOrganizations": 2071,
+    "dealFieldsCount": 56,
+    "orgFieldsCount": 58
+  },
+  "dealFields": [
+    {
+      "fieldKey": "probability",
+      "fieldName": "Wahrscheinlichkeit",
+      "fieldType": "int",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "pipeline",
+      "fieldName": "Pipeline",
+      "fieldType": "double",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "won_time",
+      "fieldName": "Datum des gewonnenen Deals",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "product_quantity",
+      "fieldName": "Produktquantität",
+      "fieldType": "double",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "product_amount",
+      "fieldName": "Produktsumme",
+      "fieldType": "double",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "product_name",
+      "fieldName": "Produktname",
+      "fieldType": "varchar",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "archive_time",
+      "fieldName": "Uhrzeit der Archivierung",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "sequence_enrollment",
+      "fieldName": "Anmeldung Sequenz",
+      "fieldType": "boolean",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "509fe2f1cdc426c5d5d230e4949821a90dc145b3",
+      "fieldName": "Erfolgsdefinition_3_Monate",
+      "fieldType": "set",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "a8aacfbde116bd6e729cbcd914d66102487fce60",
+      "fieldName": "Hauptbedenken",
+      "fieldType": "set",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "2ed112593e74a8e3f8af45681840fe67665b3e7c",
+      "fieldName": "Referenz_Berechtigung",
+      "fieldType": "set",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "64ac62cd7da6666c28c3ed0e53b2562c8611a0c5",
+      "fieldName": "asana_task_gid",
+      "fieldType": "varchar",
+      "totalRecords": 1996,
+      "filledCount": 0,
+      "emptyCount": 1996,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "150cae9505cead0d35211024a068d678415d757b",
+      "fieldName": "Entscheidungszeitrahmen",
+      "fieldType": "enum",
+      "totalRecords": 1996,
+      "filledCount": 1,
+      "emptyCount": 1995,
+      "fillRate": 0.05,
+      "sampleValues": [
+        "42"
+      ]
+    },
+    {
+      "fieldKey": "5219d805872d071220f9537f83d7aaa7af908cb1",
+      "fieldName": "Bevorzugtes_Preismodell",
+      "fieldType": "set",
+      "totalRecords": 1996,
+      "filledCount": 1,
+      "emptyCount": 1995,
+      "fillRate": 0.05,
+      "sampleValues": [
+        "84"
+      ]
+    },
+    {
+      "fieldKey": "label",
+      "fieldName": "Label",
+      "fieldType": "set",
+      "totalRecords": 1996,
+      "filledCount": 2,
+      "emptyCount": 1994,
+      "fillRate": 0.1,
+      "sampleValues": [
+        "29",
+        "29"
+      ]
+    },
+    {
+      "fieldKey": "mrr",
+      "fieldName": "MRR",
+      "fieldType": "monetary",
+      "totalRecords": 1996,
+      "filledCount": 2,
+      "emptyCount": 1994,
+      "fillRate": 0.1,
+      "sampleValues": [
+        0,
+        0
+      ]
+    },
+    {
+      "fieldKey": "mrr_currency",
+      "fieldName": "Währung von MRR",
+      "fieldType": "varchar",
+      "totalRecords": 1996,
+      "filledCount": 2,
+      "emptyCount": 1994,
+      "fillRate": 0.1,
+      "sampleValues": [
+        "EUR",
+        "EUR"
+      ]
+    },
+    {
+      "fieldKey": "arr",
+      "fieldName": "ARR",
+      "fieldType": "monetary",
+      "totalRecords": 1996,
+      "filledCount": 2,
+      "emptyCount": 1994,
+      "fillRate": 0.1,
+      "sampleValues": [
+        0,
+        0
+      ]
+    },
+    {
+      "fieldKey": "arr_currency",
+      "fieldName": "Währung von ARR",
+      "fieldType": "varchar",
+      "totalRecords": 1996,
+      "filledCount": 2,
+      "emptyCount": 1994,
+      "fillRate": 0.1,
+      "sampleValues": [
+        "EUR",
+        "EUR"
+      ]
+    },
+    {
+      "fieldKey": "acv",
+      "fieldName": "ACV",
+      "fieldType": "monetary",
+      "totalRecords": 1996,
+      "filledCount": 2,
+      "emptyCount": 1994,
+      "fillRate": 0.1,
+      "sampleValues": [
+        14000,
+        14000
+      ]
+    },
+    {
+      "fieldKey": "acv_currency",
+      "fieldName": "Währung von ACV",
+      "fieldType": "varchar",
+      "totalRecords": 1996,
+      "filledCount": 2,
+      "emptyCount": 1994,
+      "fillRate": 0.1,
+      "sampleValues": [
+        "EUR",
+        "EUR"
+      ]
+    },
+    {
+      "fieldKey": "expected_close_date",
+      "fieldName": "Erwartetes Abschlussdatum",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 7,
+      "emptyCount": 1989,
+      "fillRate": 0.35,
+      "sampleValues": [
+        "2026-01-01",
+        "2025-09-01",
+        "2025-08-29"
+      ]
+    },
+    {
+      "fieldKey": "d4053aba4c9658deed096aa17bd07191343c2987",
+      "fieldName": "Rechtsform",
+      "fieldType": "enum",
+      "totalRecords": 1996,
+      "filledCount": 11,
+      "emptyCount": 1985,
+      "fillRate": 0.55,
+      "sampleValues": [
+        "33",
+        "32",
+        "32"
+      ]
+    },
+    {
+      "fieldKey": "channel_id",
+      "fieldName": "ID des Quellkanals",
+      "fieldType": "varchar",
+      "totalRecords": 1996,
+      "filledCount": 25,
+      "emptyCount": 1971,
+      "fillRate": 1.25,
+      "sampleValues": [
+        "lemlist",
+        "lemlist",
+        "lemlist"
+      ]
+    },
+    {
+      "fieldKey": "channel",
+      "fieldName": "Quellkanal",
+      "fieldType": "enum",
+      "totalRecords": 1996,
+      "filledCount": 26,
+      "emptyCount": 1970,
+      "fillRate": 1.3,
+      "sampleValues": [
+        7,
+        8,
+        8
+      ]
+    },
+    {
+      "fieldKey": "lost_time",
+      "fieldName": "Datum des verlorenen Deals",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 38,
+      "emptyCount": 1958,
+      "fillRate": 1.9,
+      "sampleValues": [
+        "2025-08-18 13:04:04",
+        "2025-10-01 10:47:35",
+        "2025-10-09 07:18:57"
+      ]
+    },
+    {
+      "fieldKey": "close_time",
+      "fieldName": "Deal abgeschlossen am",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 38,
+      "emptyCount": 1958,
+      "fillRate": 1.9,
+      "sampleValues": [
+        "2025-08-18 13:04:04",
+        "2025-10-01 10:47:35",
+        "2025-10-09 07:18:57"
+      ]
+    },
+    {
+      "fieldKey": "lost_reason",
+      "fieldName": "Verlustgrund",
+      "fieldType": "varchar_options",
+      "totalRecords": 1996,
+      "filledCount": 38,
+      "emptyCount": 1958,
+      "fillRate": 1.9,
+      "sampleValues": [
+        "no good progress - Bad Timing, talk in 6 months",
+        "mledet sich nicht reponsive seit wochen!",
+        "sind in regelfinanzierung gerutscht brauchen keine Fördermittel mehr"
+      ]
+    },
+    {
+      "fieldKey": "next_activity_date",
+      "fieldName": "Datum nächste Aktivität",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 81,
+      "emptyCount": 1915,
+      "fillRate": 4.06,
+      "sampleValues": [
+        "2026-01-14",
+        "2025-10-01",
+        "2025-10-29"
+      ]
+    },
+    {
+      "fieldKey": "478708a38a2778bc3521312e015711f26d25bdd8",
+      "fieldName": "Fokus",
+      "fieldType": "varchar",
+      "totalRecords": 1996,
+      "filledCount": 138,
+      "emptyCount": 1858,
+      "fillRate": 6.91,
+      "sampleValues": [
+        "Nähwerkstatt, Migrationsberatung, gemeinschaftliches Wohnen",
+        "- Kunst & Kreativität: Graffiti, DJ, Poetry, Rap, Theater 2022–2024 <br>- Mensch & Umwelt: z. B. Espresso‑Workshop",
+        "- Installationen mit Zeitzeugen-Geschichten zu Gebäuden/Siedlungen\n- Themenschwerpunkte: Häuser, Personen, Graffitis, Siedlungsbau\n- Publikumsaktivierung durch Erzählpfade"
+      ]
+    },
+    {
+      "fieldKey": "last_activity_date",
+      "fieldName": "Datum der letzten Aktivität",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 174,
+      "emptyCount": 1822,
+      "fillRate": 8.72,
+      "sampleValues": [
+        "2025-06-19",
+        "2025-08-20",
+        "2025-09-01"
+      ]
+    },
+    {
+      "fieldKey": "last_incoming_mail_time",
+      "fieldName": "Letzte E-Mail erhalten",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 279,
+      "emptyCount": 1717,
+      "fillRate": 13.98,
+      "sampleValues": [
+        "2025-06-19 14:14:19",
+        "2025-10-09 09:12:40",
+        "2025-09-08 06:01:14"
+      ]
+    },
+    {
+      "fieldKey": "last_outgoing_mail_time",
+      "fieldName": "Letzte E-Mail gesendet",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 287,
+      "emptyCount": 1709,
+      "fillRate": 14.38,
+      "sampleValues": [
+        "2025-06-18 12:19:23",
+        "2025-10-09 09:39:49",
+        "2025-09-01 15:04:04"
+      ]
+    },
+    {
+      "fieldKey": "stage_change_time",
+      "fieldName": "Letzte Phasenänderung",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 829,
+      "emptyCount": 1167,
+      "fillRate": 41.53,
+      "sampleValues": [
+        "2025-08-18 12:29:48",
+        "2025-09-15 19:53:13",
+        "2025-10-28 21:24:28"
+      ]
+    },
+    {
+      "fieldKey": "origin_id",
+      "fieldName": "ID der Ursprungsquelle",
+      "fieldType": "varchar",
+      "totalRecords": 1996,
+      "filledCount": 1973,
+      "emptyCount": 23,
+      "fillRate": 98.85,
+      "sampleValues": [
+        "9061a405-61b4-450b-9ee8-b9f6798d5647",
+        "9061a405-61b4-450b-9ee8-b9f6798d5647",
+        "9061a405-61b4-450b-9ee8-b9f6798d5647"
+      ]
+    },
+    {
+      "fieldKey": "person_id",
+      "fieldName": "Kontaktperson",
+      "fieldType": "people",
+      "totalRecords": 1996,
+      "filledCount": 1986,
+      "emptyCount": 10,
+      "fillRate": 99.5,
+      "sampleValues": [
+        {
+          "active_flag": true,
+          "name": "Dr Monika Klotz",
+          "email": [
+            {
+              "label": "home",
+              "value": "monika.klotz@saatkorn-projekt.de",
+              "primary": true
+            }
+          ],
+          "phone": [
+            {
+              "label": "work",
+              "value": "0711 / 860 365 50",
+              "primary": true
+            }
+          ],
+          "owner_id": 23827678,
+          "company_id": 14092101,
+          "value": 9
+        },
+        {
+          "active_flag": true,
+          "name": "Arthur Spitzer",
+          "email": [
+            {
+              "value": "",
+              "primary": true
+            }
+          ],
+          "phone": [
+            {
+              "label": "work",
+              "value": "01608226491",
+              "primary": true
+            }
+          ],
+          "owner_id": 23827678,
+          "company_id": 14092101,
+          "value": 10
+        },
+        {
+          "active_flag": true,
+          "name": "Iyabo Kaczmarek",
+          "email": [
+            {
+              "label": "work",
+              "value": "iyabo@unter-einem-dach.org",
+              "primary": true
+            }
+          ],
+          "phone": [
+            {
+              "label": "work",
+              "value": "+ 49 (0) 176 76390972",
+              "primary": true
+            }
+          ],
+          "owner_id": 23827678,
+          "company_id": 14092101,
+          "value": 1818
+        }
+      ]
+    },
+    {
+      "fieldKey": "org_id",
+      "fieldName": "Organisation",
+      "fieldType": "org",
+      "totalRecords": 1996,
+      "filledCount": 1994,
+      "emptyCount": 2,
+      "fillRate": 99.9,
+      "sampleValues": [
+        {
+          "name": "Saatkorn Projekt e.V",
+          "people_count": 1,
+          "owner_id": 23827678,
+          "address": "Saatkorn Projekt e.V., Martin-Luther-Straße, Korntal-Münchingen-Korntal, Deutschland",
+          "label_ids": [
+            10,
+            12
+          ],
+          "active_flag": true,
+          "cc_email": "antragplus@pipedrivemail.com",
+          "owner_name": "Robert Tepass",
+          "value": 6
+        },
+        {
+          "name": "Sperlingshof e.V",
+          "people_count": 1,
+          "owner_id": 23827678,
+          "address": null,
+          "label_ids": [
+            12
+          ],
+          "active_flag": true,
+          "cc_email": "antragplus@pipedrivemail.com",
+          "owner_name": "Robert Tepass",
+          "value": 7
+        },
+        {
+          "name": "Samaritan's Purse e.V",
+          "people_count": 0,
+          "owner_id": 23827678,
+          "address": "Samaritan's Purse e.V. - die barmherzigen Samariter, Trachenbergring, Berlin-Bezirk Tempelhof-Schöneberg, Deutschland",
+          "label_ids": [
+            12
+          ],
+          "active_flag": true,
+          "cc_email": "antragplus@pipedrivemail.com",
+          "owner_name": "Robert Tepass",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "fieldKey": "id",
+      "fieldName": "ID",
+      "fieldType": "int",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        8,
+        1829,
+        1830
+      ]
+    },
+    {
+      "fieldKey": "title",
+      "fieldName": "Titel",
+      "fieldType": "varchar",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "Saatkorn Projekt e.V Deal",
+        "Sperlingshof e.V Deal",
+        "Samaritan's Purse e.V Deal"
+      ]
+    },
+    {
+      "fieldKey": "creator_user_id",
+      "fieldName": "Ersteller",
+      "fieldType": "user",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        {
+          "id": 23827678,
+          "name": "Robert Tepass",
+          "email": "robert@antragplus.de",
+          "has_pic": 0,
+          "pic_hash": null,
+          "active_flag": true,
+          "value": 23827678
+        },
+        {
+          "id": 23827678,
+          "name": "Robert Tepass",
+          "email": "robert@antragplus.de",
+          "has_pic": 0,
+          "pic_hash": null,
+          "active_flag": true,
+          "value": 23827678
+        },
+        {
+          "id": 23827678,
+          "name": "Robert Tepass",
+          "email": "robert@antragplus.de",
+          "has_pic": 0,
+          "pic_hash": null,
+          "active_flag": true,
+          "value": 23827678
+        }
+      ]
+    },
+    {
+      "fieldKey": "user_id",
+      "fieldName": "Besitzer",
+      "fieldType": "user",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        {
+          "id": 23827678,
+          "name": "Robert Tepass",
+          "email": "robert@antragplus.de",
+          "has_pic": 0,
+          "pic_hash": null,
+          "active_flag": true,
+          "value": 23827678
+        },
+        {
+          "id": 23827678,
+          "name": "Robert Tepass",
+          "email": "robert@antragplus.de",
+          "has_pic": 0,
+          "pic_hash": null,
+          "active_flag": true,
+          "value": 23827678
+        },
+        {
+          "id": 23827678,
+          "name": "Robert Tepass",
+          "email": "robert@antragplus.de",
+          "has_pic": 0,
+          "pic_hash": null,
+          "active_flag": true,
+          "value": 23827678
+        }
+      ]
+    },
+    {
+      "fieldKey": "value",
+      "fieldName": "Wert",
+      "fieldType": "monetary",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        14000,
+        14000,
+        25000
+      ]
+    },
+    {
+      "fieldKey": "currency",
+      "fieldName": "Währung",
+      "fieldType": "varchar",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "EUR",
+        "EUR",
+        "EUR"
+      ]
+    },
+    {
+      "fieldKey": "weighted_value",
+      "fieldName": "Gewichteter Wert",
+      "fieldType": "monetary",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        14000,
+        14000,
+        2500
+      ]
+    },
+    {
+      "fieldKey": "weighted_value_currency",
+      "fieldName": "Währung des gewichteten Werts",
+      "fieldType": "varchar",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "EUR",
+        "EUR",
+        "EUR"
+      ]
+    },
+    {
+      "fieldKey": "stage_id",
+      "fieldName": "Phase",
+      "fieldType": "stage",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        12,
+        12,
+        20
+      ]
+    },
+    {
+      "fieldKey": "status",
+      "fieldName": "Status",
+      "fieldType": "status",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "open",
+        "open",
+        "lost"
+      ]
+    },
+    {
+      "fieldKey": "add_time",
+      "fieldName": "Deal erstellt",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "2025-06-18 06:31:40",
+        "2025-06-28 12:36:24",
+        "2025-06-28 12:51:28"
+      ]
+    },
+    {
+      "fieldKey": "update_time",
+      "fieldName": "Zeit der Aktualisierung",
+      "fieldType": "date",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "2025-08-18 12:29:48",
+        "2025-09-22 13:04:03",
+        "2025-10-28 21:24:28"
+      ]
+    },
+    {
+      "fieldKey": "visible_to",
+      "fieldName": "Sichtbar für",
+      "fieldType": "visible_to",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    {
+      "fieldKey": "activities_count",
+      "fieldName": "Gesamtzahl der Aktivitäten",
+      "fieldType": "int",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "fieldKey": "done_activities_count",
+      "fieldName": "Erledigte Aktivitäten",
+      "fieldType": "int",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "fieldKey": "undone_activities_count",
+      "fieldName": "Zu erledigende Aktivitäten",
+      "fieldType": "int",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "fieldKey": "email_messages_count",
+      "fieldName": "Anzahl E-Mail-Nachrichten",
+      "fieldType": "int",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        8,
+        0,
+        0
+      ]
+    },
+    {
+      "fieldKey": "origin",
+      "fieldName": "Quellenherkunft",
+      "fieldType": "enum",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "ManuallyCreated",
+        "ManuallyCreated",
+        "ManuallyCreated"
+      ]
+    },
+    {
+      "fieldKey": "is_archived",
+      "fieldName": "Archiv-Status",
+      "fieldType": "enum",
+      "totalRecords": 1996,
+      "filledCount": 1996,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "organizationFields": [
+    {
+      "fieldKey": "picture_id",
+      "fieldName": "Profilbild",
+      "fieldType": "picture",
+      "totalRecords": 2071,
+      "filledCount": 0,
+      "emptyCount": 2071,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "address_lat",
+      "fieldName": "Breitengrad von Adresse",
+      "fieldType": "double",
+      "totalRecords": 2071,
+      "filledCount": 0,
+      "emptyCount": 2071,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "address_long",
+      "fieldName": "Längengrad von Adresse",
+      "fieldType": "double",
+      "totalRecords": 2071,
+      "filledCount": 0,
+      "emptyCount": 2071,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "address_subpremise",
+      "fieldName": "Appartement/Suite Nr. Adresse",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 0,
+      "emptyCount": 2071,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "address_sublocality",
+      "fieldName": "Bezirk/Ortsteil Adresse",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 0,
+      "emptyCount": 2071,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "annual_revenue",
+      "fieldName": "Jahresumsatz",
+      "fieldType": "enum",
+      "totalRecords": 2071,
+      "filledCount": 0,
+      "emptyCount": 2071,
+      "fillRate": 0,
+      "sampleValues": []
+    },
+    {
+      "fieldKey": "address_street_number",
+      "fieldName": "Hausnummer Adresse",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 1,
+      "emptyCount": 2070,
+      "fillRate": 0.05,
+      "sampleValues": [
+        "7"
+      ]
+    },
+    {
+      "fieldKey": "address_route",
+      "fieldName": "Straßenname Adresse",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 1,
+      "emptyCount": 2070,
+      "fillRate": 0.05,
+      "sampleValues": [
+        "Poststraße"
+      ]
+    },
+    {
+      "fieldKey": "address_admin_area_level_2",
+      "fieldName": "Region Adresse",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 2,
+      "emptyCount": 2069,
+      "fillRate": 0.1,
+      "sampleValues": [
+        "Karlsruhe",
+        "Darmstadt"
+      ]
+    },
+    {
+      "fieldKey": "c70948667997860cc7faa6e264a5fb2626536097",
+      "fieldName": "Software_Budget",
+      "fieldType": "enum",
+      "totalRecords": 2071,
+      "filledCount": 2,
+      "emptyCount": 2069,
+      "fillRate": 0.1,
+      "sampleValues": [
+        "41",
+        "40"
+      ]
+    },
+    {
+      "fieldKey": "3472ea6f3ca89d4bb435e7a4169a7d096fb25572",
+      "fieldName": "Stunden_pro_Antrag",
+      "fieldType": "double",
+      "totalRecords": 2071,
+      "filledCount": 2,
+      "emptyCount": 2069,
+      "fillRate": 0.1,
+      "sampleValues": [
+        45,
+        35
+      ]
+    },
+    {
+      "fieldKey": "bc5ac98f07eac303e30a3fe58dfcb272d173374f",
+      "fieldName": "Stundensatz_EUR",
+      "fieldType": "double",
+      "totalRecords": 2071,
+      "filledCount": 2,
+      "emptyCount": 2069,
+      "fillRate": 0.1,
+      "sampleValues": [
+        80,
+        65
+      ]
+    },
+    {
+      "fieldKey": "address_locality",
+      "fieldName": "Stadt/Dorf/Gemeinde Adresse",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "Oberhof",
+        "Heidelberg",
+        "Eltville am Rhein"
+      ]
+    },
+    {
+      "fieldKey": "address_country",
+      "fieldName": "Land Adresse",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "Germany",
+        "Deutschland",
+        "Deutschland"
+      ]
+    },
+    {
+      "fieldKey": "address_postal_code",
+      "fieldName": "PLZ/Postleitzahl Adresse",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "98559",
+        "69",
+        "65"
+      ]
+    },
+    {
+      "fieldKey": "address_formatted_address",
+      "fieldName": "Vollständige/kombinierte Adresse Adresse",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "Poststraße 7, 98559 Oberhof, Germany",
+        "69 Heidelberg, Deutschland",
+        "65 Eltville am Rhein, Deutschland"
+      ]
+    },
+    {
+      "fieldKey": "b528a17abb1c85f0d95fa5200a3b42aa3609128d",
+      "fieldName": "Antraege_pro_Jahr",
+      "fieldType": "double",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        22,
+        8,
+        3
+      ]
+    },
+    {
+      "fieldKey": "f299c566634de8eb132332b3860b40c418017cd8",
+      "fieldName": "Dokumentenablage",
+      "fieldType": "set",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "71",
+        "70",
+        "72"
+      ]
+    },
+    {
+      "fieldKey": "866429d2c57fb1e8f3b370a3e46e258c3f0102d2",
+      "fieldName": "Digitalisierungsgrad",
+      "fieldType": "enum",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "75",
+        "73",
+        "74"
+      ]
+    },
+    {
+      "fieldKey": "8f68d9e67324fd4d13714937b5dbd01c2167edf7",
+      "fieldName": "Strukturierte_Finanzdaten",
+      "fieldType": "set",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "82",
+        "82",
+        "83"
+      ]
+    },
+    {
+      "fieldKey": "29a6798ea68741958df410a0fd3822448eaa56c1",
+      "fieldName": "Verwendungsnachweise",
+      "fieldType": "enum",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "78",
+        "79",
+        "79"
+      ]
+    },
+    {
+      "fieldKey": "a63ecec780a4ef24e5ece2fcda1e34922dfcd841",
+      "fieldName": "KPI_Erfassung",
+      "fieldType": "set",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "81",
+        "80",
+        "81"
+      ]
+    },
+    {
+      "fieldKey": "d174afde38a54f6fb12a1d9dbac01ab409288be8",
+      "fieldName": "Antragsformate",
+      "fieldType": "set",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "67",
+        "65",
+        "66"
+      ]
+    },
+    {
+      "fieldKey": "8515fb882670341f75261d6637c4b40ea467e38b",
+      "fieldName": "Aktive_Netzwerke_Verbaende",
+      "fieldType": "set",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "88",
+        "89",
+        "87"
+      ]
+    },
+    {
+      "fieldKey": "f9dd8bd3d0ab833a7a11a3ddd9c4dac4d6248b21",
+      "fieldName": "Kooperationspartner",
+      "fieldType": "set",
+      "totalRecords": 2071,
+      "filledCount": 3,
+      "emptyCount": 2068,
+      "fillRate": 0.14,
+      "sampleValues": [
+        "91",
+        "90",
+        "92"
+      ]
+    },
+    {
+      "fieldKey": "label",
+      "fieldName": "Label",
+      "fieldType": "enum",
+      "totalRecords": 2071,
+      "filledCount": 4,
+      "emptyCount": 2067,
+      "fillRate": 0.19,
+      "sampleValues": [
+        10,
+        12,
+        10
+      ]
+    },
+    {
+      "fieldKey": "label_ids",
+      "fieldName": "Label",
+      "fieldType": "set",
+      "totalRecords": 2071,
+      "filledCount": 4,
+      "emptyCount": 2067,
+      "fillRate": 0.19,
+      "sampleValues": [
+        [
+          10,
+          12
+        ],
+        [
+          12
+        ],
+        [
+          10,
+          11
+        ]
+      ]
+    },
+    {
+      "fieldKey": "a80a9d15bc166744b615ee7e0218060b4cf17eed",
+      "fieldName": "Personen_pro_Antrag",
+      "fieldType": "double",
+      "totalRecords": 2071,
+      "filledCount": 4,
+      "emptyCount": 2067,
+      "fillRate": 0.19,
+      "sampleValues": [
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "fieldKey": "f58731f8d17c62347be8785892c25fc1ba3ff39c",
+      "fieldName": "Rechtsform",
+      "fieldType": "enum",
+      "totalRecords": 2071,
+      "filledCount": 4,
+      "emptyCount": 2067,
+      "fillRate": 0.19,
+      "sampleValues": [
+        "39",
+        "39",
+        "38"
+      ]
+    },
+    {
+      "fieldKey": "4a04518bd3e39ad5fd78fdb01d361520ded12c74",
+      "fieldName": "Antragserstellung",
+      "fieldType": "enum",
+      "totalRecords": 2071,
+      "filledCount": 4,
+      "emptyCount": 2067,
+      "fillRate": 0.19,
+      "sampleValues": [
+        "50",
+        "48",
+        "50"
+      ]
+    },
+    {
+      "fieldKey": "14930f94cf02e447115b16e9195f47ebe2486e5f",
+      "fieldName": "Standorte",
+      "fieldType": "set",
+      "totalRecords": 2071,
+      "filledCount": 4,
+      "emptyCount": 2067,
+      "fillRate": 0.19,
+      "sampleValues": [
+        "59",
+        "60",
+        "59"
+      ]
+    },
+    {
+      "fieldKey": "5b977d80fda87be275097ebaef8747c81a6abcd6",
+      "fieldName": "Digitale_Buchhaltung",
+      "fieldType": "enum",
+      "totalRecords": 2071,
+      "filledCount": 5,
+      "emptyCount": 2066,
+      "fillRate": 0.24,
+      "sampleValues": [
+        "69",
+        "68",
+        "69"
+      ]
+    },
+    {
+      "fieldKey": "a3ef35927fa9c030966d1b28245fae335246769f",
+      "fieldName": "Foerderarten_genutzt",
+      "fieldType": "set",
+      "totalRecords": 2071,
+      "filledCount": 5,
+      "emptyCount": 2066,
+      "fillRate": 0.24,
+      "sampleValues": [
+        "64",
+        "62",
+        "63"
+      ]
+    },
+    {
+      "fieldKey": "employee_count",
+      "fieldName": "Anzahl der Mitarbeiter",
+      "fieldType": "int",
+      "totalRecords": 2071,
+      "filledCount": 26,
+      "emptyCount": 2045,
+      "fillRate": 1.26,
+      "sampleValues": [
+        51,
+        1000,
+        50
+      ]
+    },
+    {
+      "fieldKey": "next_activity_date",
+      "fieldName": "Datum nächste Aktivität",
+      "fieldType": "date",
+      "totalRecords": 2071,
+      "filledCount": 82,
+      "emptyCount": 1989,
+      "fillRate": 3.96,
+      "sampleValues": [
+        "2026-01-14",
+        "2025-10-01",
+        "2025-10-29"
+      ]
+    },
+    {
+      "fieldKey": "c9e3d04a95edabceb8f49b823b6658b4d1397123",
+      "fieldName": "Fokus",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 134,
+      "emptyCount": 1937,
+      "fillRate": 6.47,
+      "sampleValues": [
+        "Jugend- und Familienhilfe im Berliner Bezirk Lichtenberg",
+        "Ambulante Jugendhilfe & Erziehungsberatung",
+        "Beratungsnetzwerk für Bio-Bau, Bio-Energie & Bio-Bauwirtschaft"
+      ]
+    },
+    {
+      "fieldKey": "linkedin",
+      "fieldName": "LinkedIn-Profile",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 163,
+      "emptyCount": 1908,
+      "fillRate": 7.87,
+      "sampleValues": [
+        "https://de.linkedin.com/company/samaritan's-purse-dach",
+        "https://pe.linkedin.com/company/3b-management-consulting-austria",
+        "https://www.linkedin.com/company/social-impact-ggmbh"
+      ]
+    },
+    {
+      "fieldKey": "industry",
+      "fieldName": "Branche",
+      "fieldType": "enum",
+      "totalRecords": 2071,
+      "filledCount": 189,
+      "emptyCount": 1882,
+      "fillRate": 9.13,
+      "sampleValues": [
+        11,
+        11,
+        13
+      ]
+    },
+    {
+      "fieldKey": "d0ff2ebd4d3c12b3f1faad65b409a8e578d657a3",
+      "fieldName": "Taetigkeitsfeld",
+      "fieldType": "set",
+      "totalRecords": 2071,
+      "filledCount": 198,
+      "emptyCount": 1873,
+      "fillRate": 9.56,
+      "sampleValues": [
+        "46",
+        "46",
+        "47"
+      ]
+    },
+    {
+      "fieldKey": "last_activity_date",
+      "fieldName": "Datum der letzten Aktivität",
+      "fieldType": "date",
+      "totalRecords": 2071,
+      "filledCount": 920,
+      "emptyCount": 1151,
+      "fillRate": 44.42,
+      "sampleValues": [
+        "2025-06-19",
+        "2025-10-28",
+        "2025-09-04"
+      ]
+    },
+    {
+      "fieldKey": "address_admin_area_level_1",
+      "fieldName": "Bundesland/Landkreis/Kanton Adresse",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 1740,
+      "emptyCount": 331,
+      "fillRate": 84.02,
+      "sampleValues": [
+        "Berlin",
+        "Leipzig",
+        "Dillingen/Saar"
+      ]
+    },
+    {
+      "fieldKey": "address",
+      "fieldName": "Adresse",
+      "fieldType": "address",
+      "totalRecords": 2071,
+      "filledCount": 1747,
+      "emptyCount": 324,
+      "fillRate": 84.36,
+      "sampleValues": [
+        "Saatkorn Projekt e.V., Martin-Luther-Straße, Korntal-Münchingen-Korntal, Deutschland",
+        "Sachsendamm 66-69, Berlin-Bezirk Tempelhof-Schöneberg, Deutschland",
+        "Samaritan's Purse e.V. - die barmherzigen Samariter, Trachenbergring, Berlin-Bezirk Tempelhof-Schöneberg, Deutschland"
+      ]
+    },
+    {
+      "fieldKey": "website",
+      "fieldName": "Website",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 1754,
+      "emptyCount": 317,
+      "fillRate": 84.69,
+      "sampleValues": [
+        "https://www.die-samariter.org",
+        "https://www.ahb-lichtenberg.de/",
+        "http://www.ahb-berlin.org/"
+      ]
+    },
+    {
+      "fieldKey": "id",
+      "fieldName": "ID",
+      "fieldType": "int",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "fieldKey": "name",
+      "fieldName": "Name",
+      "fieldType": "varchar",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "Saatkorn Projekt e.V",
+        "Sperlingshof e.V",
+        "Visioneers gGmbH"
+      ]
+    },
+    {
+      "fieldKey": "owner_id",
+      "fieldName": "Besitzer",
+      "fieldType": "user",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        {
+          "id": 23827678,
+          "name": "Robert Tepass",
+          "email": "robert@antragplus.de",
+          "has_pic": 0,
+          "pic_hash": null,
+          "active_flag": true,
+          "value": 23827678
+        },
+        {
+          "id": 23827678,
+          "name": "Robert Tepass",
+          "email": "robert@antragplus.de",
+          "has_pic": 0,
+          "pic_hash": null,
+          "active_flag": true,
+          "value": 23827678
+        },
+        {
+          "id": 23827678,
+          "name": "Robert Tepass",
+          "email": "robert@antragplus.de",
+          "has_pic": 0,
+          "pic_hash": null,
+          "active_flag": true,
+          "value": 23827678
+        }
+      ]
+    },
+    {
+      "fieldKey": "people_count",
+      "fieldName": "Kontakte",
+      "fieldType": "double",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "fieldKey": "open_deals_count",
+      "fieldName": "Offene Deals",
+      "fieldType": "double",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "fieldKey": "add_time",
+      "fieldName": "Organisation erstellt",
+      "fieldType": "date",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "2025-06-18 06:29:18",
+        "2025-06-18 14:05:42",
+        "2025-06-18 14:07:01"
+      ]
+    },
+    {
+      "fieldKey": "update_time",
+      "fieldName": "Zeit der Aktualisierung",
+      "fieldType": "date",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "2025-07-18 09:15:26",
+        "2025-06-28 12:36:24",
+        "2025-10-28 13:41:35"
+      ]
+    },
+    {
+      "fieldKey": "visible_to",
+      "fieldName": "Sichtbar für",
+      "fieldType": "visible_to",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    {
+      "fieldKey": "won_deals_count",
+      "fieldName": "Gewonnene Deals",
+      "fieldType": "int",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fieldKey": "lost_deals_count",
+      "fieldName": "Verlorene Deals",
+      "fieldType": "int",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fieldKey": "closed_deals_count",
+      "fieldName": "Abgeschlossene Deals",
+      "fieldType": "int",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fieldKey": "activities_count",
+      "fieldName": "Gesamtzahl der Aktivitäten",
+      "fieldType": "int",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        2,
+        0,
+        9
+      ]
+    },
+    {
+      "fieldKey": "done_activities_count",
+      "fieldName": "Erledigte Aktivitäten",
+      "fieldType": "int",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        2,
+        0,
+        9
+      ]
+    },
+    {
+      "fieldKey": "undone_activities_count",
+      "fieldName": "Zu erledigende Aktivitäten",
+      "fieldType": "int",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fieldKey": "email_messages_count",
+      "fieldName": "Anzahl E-Mail-Nachrichten",
+      "fieldType": "int",
+      "totalRecords": 2071,
+      "filledCount": 2071,
+      "emptyCount": 0,
+      "fillRate": 100,
+      "sampleValues": [
+        8,
+        0,
+        98
+      ]
+    }
+  ],
+  "sampleDeals": [
+    {
+      "id": 8,
+      "creator_user_id": {
+        "id": 23827678,
+        "name": "Robert Tepass",
+        "email": "robert@antragplus.de",
+        "has_pic": 0,
+        "pic_hash": null,
+        "active_flag": true,
+        "value": 23827678
+      },
+      "user_id": {
+        "id": 23827678,
+        "name": "Robert Tepass",
+        "email": "robert@antragplus.de",
+        "has_pic": 0,
+        "pic_hash": null,
+        "active_flag": true,
+        "value": 23827678
+      },
+      "person_id": {
+        "active_flag": true,
+        "name": "Dr Monika Klotz",
+        "email": [
+          {
+            "label": "home",
+            "value": "monika.klotz@saatkorn-projekt.de",
+            "primary": true
+          }
+        ],
+        "phone": [
+          {
+            "label": "work",
+            "value": "0711 / 860 365 50",
+            "primary": true
+          }
+        ],
+        "owner_id": 23827678,
+        "company_id": 14092101,
+        "value": 9
+      },
+      "org_id": {
+        "name": "Saatkorn Projekt e.V",
+        "people_count": 1,
+        "owner_id": 23827678,
+        "address": "Saatkorn Projekt e.V., Martin-Luther-Straße, Korntal-Münchingen-Korntal, Deutschland",
+        "label_ids": [
+          10,
+          12
+        ],
+        "active_flag": true,
+        "cc_email": "antragplus@pipedrivemail.com",
+        "owner_name": "Robert Tepass",
+        "value": 6
+      },
+      "stage_id": 12,
+      "title": "Saatkorn Projekt e.V Deal",
+      "value": 14000,
+      "acv": 14000,
+      "mrr": 0,
+      "arr": 0,
+      "currency": "EUR",
+      "add_time": "2025-06-18 06:31:40",
+      "update_time": "2025-08-18 12:29:48",
+      "stage_change_time": "2025-08-18 12:29:48",
+      "active": true,
+      "deleted": false,
+      "status": "open",
+      "probability": null,
+      "next_activity_date": null,
+      "next_activity_time": null,
+      "next_activity_id": null,
+      "last_activity_id": 10,
+      "last_activity_date": "2025-06-19",
+      "lost_reason": null,
+      "visible_to": "3",
+      "close_time": null,
+      "pipeline_id": 2,
+      "won_time": null,
+      "first_won_time": null,
+      "lost_time": null,
+      "products_count": 2,
+      "files_count": 0,
+      "notes_count": 1,
+      "followers_count": 1,
+      "email_messages_count": 8,
+      "activities_count": 2,
+      "done_activities_count": 2,
+      "undone_activities_count": 0,
+      "participants_count": 1,
+      "expected_close_date": "2026-01-01",
+      "last_incoming_mail_time": "2025-06-19 14:14:19",
+      "last_outgoing_mail_time": "2025-06-18 12:19:23",
+      "label": null,
+      "local_won_date": null,
+      "local_lost_date": null,
+      "local_close_date": null,
+      "origin": "ManuallyCreated",
+      "origin_id": null,
+      "channel": null,
+      "channel_id": null,
+      "is_archived": false,
+      "archive_time": null,
+      "sequence_enrollment": null,
+      "stage_order_nr": 15,
+      "person_name": "Dr Monika Klotz",
+      "org_name": "Saatkorn Projekt e.V",
+      "next_activity_subject": null,
+      "next_activity_type": null,
+      "next_activity_duration": null,
+      "next_activity_note": null,
+      "formatted_value": "14.000 €",
+      "weighted_value": 14000,
+      "formatted_weighted_value": "14.000 €",
+      "weighted_value_currency": "EUR",
+      "rotten_time": null,
+      "acv_currency": "EUR",
+      "mrr_currency": "EUR",
+      "arr_currency": "EUR",
+      "owner_name": "Robert Tepass",
+      "cc_email": "antragplus+deal8@pipedrivemail.com",
+      "478708a38a2778bc3521312e015711f26d25bdd8": null,
+      "d4053aba4c9658deed096aa17bd07191343c2987": "33",
+      "509fe2f1cdc426c5d5d230e4949821a90dc145b3": null,
+      "a8aacfbde116bd6e729cbcd914d66102487fce60": null,
+      "150cae9505cead0d35211024a068d678415d757b": null,
+      "2ed112593e74a8e3f8af45681840fe67665b3e7c": null,
+      "5219d805872d071220f9537f83d7aaa7af908cb1": null,
+      "64ac62cd7da6666c28c3ed0e53b2562c8611a0c5": null,
+      "org_hidden": false,
+      "person_hidden": false
+    },
+    {
+      "id": 1829,
+      "creator_user_id": {
+        "id": 23827678,
+        "name": "Robert Tepass",
+        "email": "robert@antragplus.de",
+        "has_pic": 0,
+        "pic_hash": null,
+        "active_flag": true,
+        "value": 23827678
+      },
+      "user_id": {
+        "id": 23827678,
+        "name": "Robert Tepass",
+        "email": "robert@antragplus.de",
+        "has_pic": 0,
+        "pic_hash": null,
+        "active_flag": true,
+        "value": 23827678
+      },
+      "person_id": {
+        "active_flag": true,
+        "name": "Arthur Spitzer",
+        "email": [
+          {
+            "value": "",
+            "primary": true
+          }
+        ],
+        "phone": [
+          {
+            "label": "work",
+            "value": "01608226491",
+            "primary": true
+          }
+        ],
+        "owner_id": 23827678,
+        "company_id": 14092101,
+        "value": 10
+      },
+      "org_id": {
+        "name": "Sperlingshof e.V",
+        "people_count": 1,
+        "owner_id": 23827678,
+        "address": null,
+        "label_ids": [
+          12
+        ],
+        "active_flag": true,
+        "cc_email": "antragplus@pipedrivemail.com",
+        "owner_name": "Robert Tepass",
+        "value": 7
+      },
+      "stage_id": 12,
+      "title": "Sperlingshof e.V Deal",
+      "value": 14000,
+      "acv": 14000,
+      "mrr": 0,
+      "arr": 0,
+      "currency": "EUR",
+      "add_time": "2025-06-28 12:36:24",
+      "update_time": "2025-09-22 13:04:03",
+      "stage_change_time": "2025-09-15 19:53:13",
+      "active": true,
+      "deleted": false,
+      "status": "open",
+      "probability": null,
+      "next_activity_date": null,
+      "next_activity_time": null,
+      "next_activity_id": null,
+      "last_activity_id": null,
+      "last_activity_date": null,
+      "lost_reason": null,
+      "visible_to": "3",
+      "close_time": null,
+      "pipeline_id": 2,
+      "won_time": null,
+      "first_won_time": null,
+      "lost_time": null,
+      "products_count": 1,
+      "files_count": 0,
+      "notes_count": 0,
+      "followers_count": 1,
+      "email_messages_count": 0,
+      "activities_count": 0,
+      "done_activities_count": 0,
+      "undone_activities_count": 0,
+      "participants_count": 1,
+      "expected_close_date": "2025-09-01",
+      "last_incoming_mail_time": null,
+      "last_outgoing_mail_time": null,
+      "label": null,
+      "local_won_date": null,
+      "local_lost_date": null,
+      "local_close_date": null,
+      "origin": "ManuallyCreated",
+      "origin_id": null,
+      "channel": null,
+      "channel_id": null,
+      "is_archived": false,
+      "archive_time": null,
+      "sequence_enrollment": null,
+      "stage_order_nr": 15,
+      "person_name": "Arthur Spitzer",
+      "org_name": "Sperlingshof e.V",
+      "next_activity_subject": null,
+      "next_activity_type": null,
+      "next_activity_duration": null,
+      "next_activity_note": null,
+      "formatted_value": "14.000 €",
+      "weighted_value": 14000,
+      "formatted_weighted_value": "14.000 €",
+      "weighted_value_currency": "EUR",
+      "rotten_time": null,
+      "acv_currency": "EUR",
+      "mrr_currency": "EUR",
+      "arr_currency": "EUR",
+      "owner_name": "Robert Tepass",
+      "cc_email": "antragplus+deal1829@pipedrivemail.com",
+      "478708a38a2778bc3521312e015711f26d25bdd8": null,
+      "d4053aba4c9658deed096aa17bd07191343c2987": null,
+      "509fe2f1cdc426c5d5d230e4949821a90dc145b3": null,
+      "a8aacfbde116bd6e729cbcd914d66102487fce60": null,
+      "150cae9505cead0d35211024a068d678415d757b": null,
+      "2ed112593e74a8e3f8af45681840fe67665b3e7c": null,
+      "5219d805872d071220f9537f83d7aaa7af908cb1": null,
+      "64ac62cd7da6666c28c3ed0e53b2562c8611a0c5": null,
+      "org_hidden": false,
+      "person_hidden": false
+    },
+    {
+      "id": 1830,
+      "creator_user_id": {
+        "id": 23827678,
+        "name": "Robert Tepass",
+        "email": "robert@antragplus.de",
+        "has_pic": 0,
+        "pic_hash": null,
+        "active_flag": true,
+        "value": 23827678
+      },
+      "user_id": {
+        "id": 23827678,
+        "name": "Robert Tepass",
+        "email": "robert@antragplus.de",
+        "has_pic": 0,
+        "pic_hash": null,
+        "active_flag": true,
+        "value": 23827678
+      },
+      "person_id": null,
+      "org_id": {
+        "name": "Samaritan's Purse e.V",
+        "people_count": 0,
+        "owner_id": 23827678,
+        "address": "Samaritan's Purse e.V. - die barmherzigen Samariter, Trachenbergring, Berlin-Bezirk Tempelhof-Schöneberg, Deutschland",
+        "label_ids": [
+          12
+        ],
+        "active_flag": true,
+        "cc_email": "antragplus@pipedrivemail.com",
+        "owner_name": "Robert Tepass",
+        "value": 9
+      },
+      "stage_id": 20,
+      "title": "Samaritan's Purse e.V Deal",
+      "value": 25000,
+      "acv": null,
+      "mrr": null,
+      "arr": null,
+      "currency": "EUR",
+      "add_time": "2025-06-28 12:51:28",
+      "update_time": "2025-10-28 21:24:28",
+      "stage_change_time": "2025-10-28 21:24:28",
+      "active": false,
+      "deleted": false,
+      "status": "lost",
+      "probability": null,
+      "next_activity_date": "2026-01-14",
+      "next_activity_time": null,
+      "next_activity_id": 76,
+      "last_activity_id": null,
+      "last_activity_date": null,
+      "lost_reason": "no good progress - Bad Timing, talk in 6 months",
+      "visible_to": "3",
+      "close_time": "2025-08-18 13:04:04",
+      "pipeline_id": 2,
+      "won_time": null,
+      "first_won_time": null,
+      "lost_time": "2025-08-18 13:04:04",
+      "products_count": 0,
+      "files_count": 0,
+      "notes_count": 1,
+      "followers_count": 1,
+      "email_messages_count": 0,
+      "activities_count": 1,
+      "done_activities_count": 0,
+      "undone_activities_count": 1,
+      "participants_count": 0,
+      "expected_close_date": null,
+      "last_incoming_mail_time": null,
+      "last_outgoing_mail_time": null,
+      "label": null,
+      "local_won_date": null,
+      "local_lost_date": "2025-08-18",
+      "local_close_date": "2025-08-18",
+      "origin": "ManuallyCreated",
+      "origin_id": null,
+      "channel": null,
+      "channel_id": null,
+      "is_archived": false,
+      "archive_time": null,
+      "sequence_enrollment": null,
+      "stage_order_nr": 4,
+      "person_name": null,
+      "org_name": "Samaritan's Purse e.V",
+      "next_activity_subject": "Robert get in touch again and make intro to Milad",
+      "next_activity_type": "call",
+      "next_activity_duration": null,
+      "next_activity_note": null,
+      "formatted_value": "25.000 €",
+      "weighted_value": 2500,
+      "formatted_weighted_value": "2.500 €",
+      "weighted_value_currency": "EUR",
+      "rotten_time": null,
+      "acv_currency": null,
+      "mrr_currency": null,
+      "arr_currency": null,
+      "owner_name": "Robert Tepass",
+      "cc_email": "antragplus+deal1830@pipedrivemail.com",
+      "478708a38a2778bc3521312e015711f26d25bdd8": null,
+      "d4053aba4c9658deed096aa17bd07191343c2987": null,
+      "509fe2f1cdc426c5d5d230e4949821a90dc145b3": null,
+      "a8aacfbde116bd6e729cbcd914d66102487fce60": null,
+      "150cae9505cead0d35211024a068d678415d757b": null,
+      "2ed112593e74a8e3f8af45681840fe67665b3e7c": null,
+      "5219d805872d071220f9537f83d7aaa7af908cb1": null,
+      "64ac62cd7da6666c28c3ed0e53b2562c8611a0c5": null,
+      "org_hidden": false,
+      "person_hidden": false
+    }
+  ],
+  "sampleOrganizations": [
+    {
+      "id": 6,
+      "owner_id": {
+        "id": 23827678,
+        "name": "Robert Tepass",
+        "email": "robert@antragplus.de",
+        "has_pic": 0,
+        "pic_hash": null,
+        "active_flag": true,
+        "value": 23827678
+      },
+      "name": "Saatkorn Projekt e.V",
+      "open_deals_count": 1,
+      "related_open_deals_count": 0,
+      "closed_deals_count": 0,
+      "related_closed_deals_count": 0,
+      "email_messages_count": 8,
+      "people_count": 1,
+      "activities_count": 2,
+      "done_activities_count": 2,
+      "undone_activities_count": 0,
+      "files_count": 0,
+      "notes_count": 1,
+      "followers_count": 1,
+      "won_deals_count": 0,
+      "related_won_deals_count": 0,
+      "lost_deals_count": 0,
+      "related_lost_deals_count": 0,
+      "active_flag": true,
+      "picture_id": null,
+      "country_code": null,
+      "first_char": "s",
+      "update_time": "2025-07-18 09:15:26",
+      "delete_time": null,
+      "add_time": "2025-06-18 06:29:18",
+      "visible_to": "3",
+      "next_activity_date": null,
+      "next_activity_time": null,
+      "next_activity_id": null,
+      "last_activity_id": 10,
+      "last_activity_date": "2025-06-19",
+      "label": 10,
+      "label_ids": [
+        10,
+        12
+      ],
+      "address": "Saatkorn Projekt e.V., Martin-Luther-Straße, Korntal-Münchingen-Korntal, Deutschland",
+      "address_subpremise": null,
+      "address_street_number": null,
+      "address_route": null,
+      "address_sublocality": null,
+      "address_locality": null,
+      "address_admin_area_level_1": null,
+      "address_admin_area_level_2": null,
+      "address_country": null,
+      "address_postal_code": null,
+      "address_formatted_address": null,
+      "website": null,
+      "linkedin": null,
+      "industry": null,
+      "annual_revenue": null,
+      "employee_count": null,
+      "owner_name": "Robert Tepass",
+      "c9e3d04a95edabceb8f49b823b6658b4d1397123": null,
+      "a80a9d15bc166744b615ee7e0218060b4cf17eed": null,
+      "b528a17abb1c85f0d95fa5200a3b42aa3609128d": null,
+      "f58731f8d17c62347be8785892c25fc1ba3ff39c": null,
+      "c70948667997860cc7faa6e264a5fb2626536097": null,
+      "3472ea6f3ca89d4bb435e7a4169a7d096fb25572": null,
+      "bc5ac98f07eac303e30a3fe58dfcb272d173374f": null,
+      "d0ff2ebd4d3c12b3f1faad65b409a8e578d657a3": null,
+      "4a04518bd3e39ad5fd78fdb01d361520ded12c74": null,
+      "5b977d80fda87be275097ebaef8747c81a6abcd6": null,
+      "14930f94cf02e447115b16e9195f47ebe2486e5f": null,
+      "a3ef35927fa9c030966d1b28245fae335246769f": null,
+      "f299c566634de8eb132332b3860b40c418017cd8": null,
+      "866429d2c57fb1e8f3b370a3e46e258c3f0102d2": null,
+      "8f68d9e67324fd4d13714937b5dbd01c2167edf7": null,
+      "29a6798ea68741958df410a0fd3822448eaa56c1": null,
+      "a63ecec780a4ef24e5ece2fcda1e34922dfcd841": null,
+      "d174afde38a54f6fb12a1d9dbac01ab409288be8": null,
+      "8515fb882670341f75261d6637c4b40ea467e38b": null,
+      "f9dd8bd3d0ab833a7a11a3ddd9c4dac4d6248b21": null,
+      "cc_email": "antragplus@pipedrivemail.com",
+      "company_id": 14092101
+    },
+    {
+      "id": 7,
+      "owner_id": {
+        "id": 23827678,
+        "name": "Robert Tepass",
+        "email": "robert@antragplus.de",
+        "has_pic": 0,
+        "pic_hash": null,
+        "active_flag": true,
+        "value": 23827678
+      },
+      "name": "Sperlingshof e.V",
+      "open_deals_count": 1,
+      "related_open_deals_count": 0,
+      "closed_deals_count": 0,
+      "related_closed_deals_count": 0,
+      "email_messages_count": 0,
+      "people_count": 1,
+      "activities_count": 0,
+      "done_activities_count": 0,
+      "undone_activities_count": 0,
+      "files_count": 0,
+      "notes_count": 0,
+      "followers_count": 1,
+      "won_deals_count": 0,
+      "related_won_deals_count": 0,
+      "lost_deals_count": 0,
+      "related_lost_deals_count": 0,
+      "active_flag": true,
+      "picture_id": null,
+      "country_code": null,
+      "first_char": "s",
+      "update_time": "2025-06-28 12:36:24",
+      "delete_time": null,
+      "add_time": "2025-06-18 14:05:42",
+      "visible_to": "3",
+      "next_activity_date": null,
+      "next_activity_time": null,
+      "next_activity_id": null,
+      "last_activity_id": null,
+      "last_activity_date": null,
+      "label": 12,
+      "label_ids": [
+        12
+      ],
+      "address": null,
+      "address_subpremise": null,
+      "address_street_number": null,
+      "address_route": null,
+      "address_sublocality": null,
+      "address_locality": null,
+      "address_admin_area_level_1": null,
+      "address_admin_area_level_2": null,
+      "address_country": null,
+      "address_postal_code": null,
+      "address_formatted_address": null,
+      "website": null,
+      "linkedin": null,
+      "industry": null,
+      "annual_revenue": null,
+      "employee_count": null,
+      "owner_name": "Robert Tepass",
+      "c9e3d04a95edabceb8f49b823b6658b4d1397123": null,
+      "a80a9d15bc166744b615ee7e0218060b4cf17eed": null,
+      "b528a17abb1c85f0d95fa5200a3b42aa3609128d": null,
+      "f58731f8d17c62347be8785892c25fc1ba3ff39c": null,
+      "c70948667997860cc7faa6e264a5fb2626536097": null,
+      "3472ea6f3ca89d4bb435e7a4169a7d096fb25572": null,
+      "bc5ac98f07eac303e30a3fe58dfcb272d173374f": null,
+      "d0ff2ebd4d3c12b3f1faad65b409a8e578d657a3": null,
+      "4a04518bd3e39ad5fd78fdb01d361520ded12c74": null,
+      "5b977d80fda87be275097ebaef8747c81a6abcd6": null,
+      "14930f94cf02e447115b16e9195f47ebe2486e5f": null,
+      "a3ef35927fa9c030966d1b28245fae335246769f": null,
+      "f299c566634de8eb132332b3860b40c418017cd8": null,
+      "866429d2c57fb1e8f3b370a3e46e258c3f0102d2": null,
+      "8f68d9e67324fd4d13714937b5dbd01c2167edf7": null,
+      "29a6798ea68741958df410a0fd3822448eaa56c1": null,
+      "a63ecec780a4ef24e5ece2fcda1e34922dfcd841": null,
+      "d174afde38a54f6fb12a1d9dbac01ab409288be8": null,
+      "8515fb882670341f75261d6637c4b40ea467e38b": null,
+      "f9dd8bd3d0ab833a7a11a3ddd9c4dac4d6248b21": null,
+      "cc_email": "antragplus@pipedrivemail.com",
+      "company_id": 14092101
+    },
+    {
+      "id": 8,
+      "owner_id": {
+        "id": 23827678,
+        "name": "Robert Tepass",
+        "email": "robert@antragplus.de",
+        "has_pic": 0,
+        "pic_hash": null,
+        "active_flag": true,
+        "value": 23827678
+      },
+      "name": "Visioneers gGmbH",
+      "open_deals_count": 1,
+      "related_open_deals_count": 0,
+      "closed_deals_count": 0,
+      "related_closed_deals_count": 0,
+      "email_messages_count": 98,
+      "people_count": 1,
+      "activities_count": 9,
+      "done_activities_count": 9,
+      "undone_activities_count": 0,
+      "files_count": 0,
+      "notes_count": 10,
+      "followers_count": 1,
+      "won_deals_count": 0,
+      "related_won_deals_count": 0,
+      "lost_deals_count": 0,
+      "related_lost_deals_count": 0,
+      "active_flag": true,
+      "picture_id": null,
+      "country_code": null,
+      "first_char": "v",
+      "update_time": "2025-10-28 13:41:35",
+      "delete_time": null,
+      "add_time": "2025-06-18 14:07:01",
+      "visible_to": "3",
+      "next_activity_date": null,
+      "next_activity_time": null,
+      "next_activity_id": null,
+      "last_activity_id": 3725,
+      "last_activity_date": "2025-10-28",
+      "label": 10,
+      "label_ids": [
+        10,
+        11
+      ],
+      "address": "Sachsendamm 66-69, Berlin-Bezirk Tempelhof-Schöneberg, Deutschland",
+      "address_subpremise": null,
+      "address_street_number": null,
+      "address_route": null,
+      "address_sublocality": null,
+      "address_locality": null,
+      "address_admin_area_level_1": null,
+      "address_admin_area_level_2": null,
+      "address_country": null,
+      "address_postal_code": null,
+      "address_formatted_address": null,
+      "website": null,
+      "linkedin": null,
+      "industry": null,
+      "annual_revenue": null,
+      "employee_count": null,
+      "owner_name": "Robert Tepass",
+      "c9e3d04a95edabceb8f49b823b6658b4d1397123": null,
+      "a80a9d15bc166744b615ee7e0218060b4cf17eed": null,
+      "b528a17abb1c85f0d95fa5200a3b42aa3609128d": null,
+      "f58731f8d17c62347be8785892c25fc1ba3ff39c": null,
+      "c70948667997860cc7faa6e264a5fb2626536097": null,
+      "3472ea6f3ca89d4bb435e7a4169a7d096fb25572": null,
+      "bc5ac98f07eac303e30a3fe58dfcb272d173374f": null,
+      "d0ff2ebd4d3c12b3f1faad65b409a8e578d657a3": null,
+      "4a04518bd3e39ad5fd78fdb01d361520ded12c74": null,
+      "5b977d80fda87be275097ebaef8747c81a6abcd6": null,
+      "14930f94cf02e447115b16e9195f47ebe2486e5f": null,
+      "a3ef35927fa9c030966d1b28245fae335246769f": null,
+      "f299c566634de8eb132332b3860b40c418017cd8": null,
+      "866429d2c57fb1e8f3b370a3e46e258c3f0102d2": null,
+      "8f68d9e67324fd4d13714937b5dbd01c2167edf7": null,
+      "29a6798ea68741958df410a0fd3822448eaa56c1": null,
+      "a63ecec780a4ef24e5ece2fcda1e34922dfcd841": null,
+      "d174afde38a54f6fb12a1d9dbac01ab409288be8": null,
+      "8515fb882670341f75261d6637c4b40ea467e38b": null,
+      "f9dd8bd3d0ab833a7a11a3ddd9c4dac4d6248b21": null,
+      "cc_email": "antragplus@pipedrivemail.com",
+      "company_id": 14092101
+    }
+  ]
+}

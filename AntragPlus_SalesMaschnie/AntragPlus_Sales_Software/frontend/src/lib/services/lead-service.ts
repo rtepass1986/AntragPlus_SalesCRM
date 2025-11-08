@@ -164,22 +164,41 @@ export class LeadService {
     address?: string
     industry?: string
     tätigkeitsfeld?: string
+    geber?: string
+    fördererfahrung?: string
+    jahr?: string
+    förderzweck?: string
+    betrag?: string
+    empfaengerid?: string
+    [key: string]: any
   }>): Promise<{ imported: number; failed: number }> {
-    const leadsToInsert: Partial<LeadRow>[] = leads.map(lead => ({
-      company_name: lead.companyName,
-      website: lead.website || null,
-      email: lead.email || null,
-      phone: lead.phone || null,
-      address: lead.address || null,
-      industry: lead.industry || null,
-      tätigkeitsfeld: lead.tätigkeitsfeld || null,
-      source: 'csv',
-      status: 'pending',
-      confidence: 0,
-      enrichment_attempts: 0,
-      is_deleted: false,
-      created_by: 'csv_import',
-    }))
+    const leadsToInsert: Partial<LeadRow>[] = leads.map(lead => {
+      // Extract custom fields
+      const customFields: any = {}
+      if (lead.geber) customFields.geber = lead.geber
+      if (lead.fördererfahrung) customFields.fördererfahrung = lead.fördererfahrung
+      if (lead.jahr) customFields.jahr = lead.jahr
+      if (lead.förderzweck) customFields.förderzweck = lead.förderzweck
+      if (lead.betrag) customFields.betrag = lead.betrag
+      if (lead.empfaengerid) customFields.empfaengerid = lead.empfaengerid
+
+      return {
+        company_name: lead.companyName,
+        website: lead.website || null,
+        email: lead.email || null,
+        phone: lead.phone || null,
+        address: lead.address || null,
+        industry: lead.industry || null,
+        tätigkeitsfeld: lead.tätigkeitsfeld || null,
+        custom_fields: customFields,
+        source: 'csv',
+        status: 'pending',
+        confidence: 0,
+        enrichment_attempts: 0,
+        is_deleted: false,
+        created_by: 'csv_import',
+      }
+    })
 
     const imported = await leadRepository.bulkInsert(leadsToInsert)
     const failed = leads.length - imported

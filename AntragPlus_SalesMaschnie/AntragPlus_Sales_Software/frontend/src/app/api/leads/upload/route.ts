@@ -60,15 +60,23 @@ export async function POST(request: NextRequest) {
         lead[key] = values[index] || null
       })
       
-      // Map common field names (support German and English)
+      // Map field names - YOUR SPECIFIC CSV FORMAT
       const mappedLead = {
-        companyName: lead.company || lead.name || lead.organization || lead.companyName || lead.firma || lead.unternehmen,
+        companyName: lead.Firmename || lead.firmename || lead.company || lead.name || lead.firma,
         website: lead.website || lead.url || lead.web || null,
         email: lead.email || lead.mail || lead['e-mail'] || null,
         phone: lead.phone || lead.tel || lead.telefon || lead.telephone || null,
-        address: lead.address || lead.adresse || null,
+        address: lead.anschrift || lead.address || lead.adresse || null,
         industry: lead.industry || lead.industrie || lead.branche || null,
-        tätigkeitsfeld: lead.tätigkeitsfeld || lead.field || lead.bereich || null,
+        tätigkeitsfeld: lead.Tätigkeitsfeld || lead.tätigkeitsfeld || lead.field || null,
+        
+        // Custom fields specific to your CSV
+        geber: lead.Geber || lead.geber || null,
+        fördererfahrung: lead.Fördererfahrung || lead.fördererfahrung || null,
+        jahr: lead.jahr || lead.year || null,
+        förderzweck: lead.Förderzweck || lead.förderzweck || null,
+        betrag: lead.betrag || lead.amount || null,
+        empfaengerid: lead.empfaengerid || lead.empfängerid || null,
       }
 
       if (mappedLead.companyName) {

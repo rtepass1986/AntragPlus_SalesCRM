@@ -1,0 +1,840 @@
+[
+  {
+    "orgId": 921,
+    "orgName": "AHB Lichtenberg gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 923,
+    "orgName": "3B Beraten, Begleiten, Begegnen gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 924,
+    "orgName": "ADV gGmbH (Jugendhilfe)",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 925,
+    "orgName": "AHB Kinder- und Jugendhilfe GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 926,
+    "orgName": "A.p.e. gGmbH ambulante & stationäre Hilfen",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 927,
+    "orgName": "AJUDA Kinder- und Jugendhilfe GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 930,
+    "orgName": "Aktive Pädagogik GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 931,
+    "orgName": "Aktion´70 - Jugendhilfe im Verbund e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 932,
+    "orgName": "Albert-Schweitzer-Familienwerk e.V. - Jugendprojekte Lüneburg",
+    "status": "success",
+    "enrichedFields": [
+      "employee_count"
+    ],
+    "errors": [],
+    "updates": {
+      "employee_count": 1000
+    }
+  },
+  {
+    "orgId": 933,
+    "orgName": "Albert-Schweitzer-Kinderdorf Berlin e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 934,
+    "orgName": "Alexianer Martinistift GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 935,
+    "orgName": "ALEP e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 937,
+    "orgName": "Amalie Sieveking Gesellschaft Duisburg gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 938,
+    "orgName": "AMBER gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 939,
+    "orgName": "Allerhof GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 940,
+    "orgName": "Ambulante Psychosomatik & Familienclearing GmbH (APF)",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 941,
+    "orgName": "andante gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 942,
+    "orgName": "ANKER Sozialarbeit Gemeinnützige GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 943,
+    "orgName": "Ameos Klinikum Hildesheim",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 944,
+    "orgName": "Aporia GmbH",
+    "status": "success",
+    "enrichedFields": [
+      "industry",
+      "employee_count"
+    ],
+    "errors": [],
+    "updates": {
+      "industry": "11",
+      "employee_count": 50
+    }
+  },
+  {
+    "orgId": 945,
+    "orgName": "ANKERPUNKT Kinder- & Jugendhilfe",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 946,
+    "orgName": "ANKOMMEN Haus Tannenhof",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 947,
+    "orgName": "ANKERPUNKT TWEDT",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 948,
+    "orgName": "Arbeiterwohlfahrt Kreisverband Vogtland e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 949,
+    "orgName": "Arbitria e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 950,
+    "orgName": "ARNE Kinder- und Jugendhilfe GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 951,
+    "orgName": "ASB Gemeinnützige Gesellschaft für Kinder-, Jugend- und Familienhilfe im Havelland mbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 952,
+    "orgName": "ASP-Begleitung gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 953,
+    "orgName": "ATELIER BOOTH 17 - Pfefferwerk GgmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 954,
+    "orgName": "Augenblick.UG(haftungsbeschränkt)",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 955,
+    "orgName": "Aufwind Jugendhilfe GmbH",
+    "status": "success",
+    "enrichedFields": [
+      "employee_count"
+    ],
+    "errors": [],
+    "updates": {
+      "employee_count": 201
+    }
+  },
+  {
+    "orgId": 956,
+    "orgName": "Ausbildungswerk Kreuzberg e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 958,
+    "orgName": "Augustinum Berchtesgadener Land gGmbH",
+    "status": "success",
+    "enrichedFields": [
+      "employee_count"
+    ],
+    "errors": [],
+    "updates": {
+      "employee_count": 5000
+    }
+  },
+  {
+    "orgId": 959,
+    "orgName": "AWO Berlin Kreisverband Südost e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 960,
+    "orgName": "Babylon Kinder- und Jugendhilfe",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 961,
+    "orgName": "AZEH e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 962,
+    "orgName": "Balance gGmbH \"Haus an der Polz\"",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 963,
+    "orgName": "baltic kids gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 964,
+    "orgName": "Basislager gGmbH",
+    "status": "success",
+    "enrichedFields": [
+      "employee_count"
+    ],
+    "errors": [],
+    "updates": {
+      "employee_count": 30
+    }
+  },
+  {
+    "orgId": 965,
+    "orgName": "Bastille-Gemeinsam sind wir stark e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 966,
+    "orgName": "bbw Südhessen  gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 968,
+    "orgName": "Belle Maison GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 969,
+    "orgName": "Bergisches Internat",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 971,
+    "orgName": "Berliner Institut Familie-Schule-Erziehung-Gesundheit",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 972,
+    "orgName": "berliner STARThilfe e.V.",
+    "status": "success",
+    "enrichedFields": [
+      "employee_count"
+    ],
+    "errors": [],
+    "updates": {
+      "employee_count": 125
+    }
+  },
+  {
+    "orgId": 974,
+    "orgName": "beta gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 975,
+    "orgName": "Bethania Diakonie gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 976,
+    "orgName": "Bethel.regional ; Haus Am Funkturm",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 977,
+    "orgName": "Betreuungen Thomas Potthoff",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 978,
+    "orgName": "Betreute Wohngruppe Gransee bei Berlin",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 979,
+    "orgName": "Betreuungsteam Mecklenburg - Vorpommern",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 980,
+    "orgName": "Betreuungsverein Lebenshilfe NRW e. V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 981,
+    "orgName": "Bettlex Pflegedienst GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 982,
+    "orgName": "Bildungsbrücke e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 983,
+    "orgName": "Bildungs- und Kooperationsgesellschaft Burgenlandkreis mbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 984,
+    "orgName": "BJW-Kiel",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 985,
+    "orgName": "Blaues Kreuz Diakoniewerk",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 986,
+    "orgName": "Blackbox Jugendhilfe GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 987,
+    "orgName": "Blickpunkt Familie",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 988,
+    "orgName": "Brügger Hof eGbR",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 989,
+    "orgName": "Brandenburger Kinderland - Die Jugendhilfe GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 990,
+    "orgName": "BSH gem. GmbH Jugendhilfe Selbecke",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 991,
+    "orgName": "BUNT Kinder- und Jugendhilfe gUG",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 993,
+    "orgName": "BVI | Berliner Verein für Integration e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 994,
+    "orgName": "BVH Hanse-Zentrum für Bildung und Jugendförderung gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 995,
+    "orgName": "BVIK gGmbH- Jugendhilfeverbund",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 996,
+    "orgName": "Caritas Jugendhilfe Wiesbaden - WG Noah",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 997,
+    "orgName": "Caiju e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 998,
+    "orgName": "CAB Augsburg BetriebstrÃ¤ger gGmbH Wohnen und Offene Hilfen",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 999,
+    "orgName": "Camphill Alt-Schönow gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1000,
+    "orgName": "Caritas Kinder- und Jugendhaus Mariaschutz",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1001,
+    "orgName": "Casablanca",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1002,
+    "orgName": "CHAMÄLEON Stralsund e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1003,
+    "orgName": "child & parents Pädagogik gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1004,
+    "orgName": "Christiani e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1006,
+    "orgName": "Cluster Jugendhilfe",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1007,
+    "orgName": "Communio-Jugendhilfe",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1010,
+    "orgName": "contact - Jugendhilfe und Bildung gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1011,
+    "orgName": "Contigo-Ruhr gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1012,
+    "orgName": "IMPULS KBB (g)emeinnützige GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1013,
+    "orgName": "Corvus GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1014,
+    "orgName": "Impulse Soziale Dienste GmbH & Co.KG",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1015,
+    "orgName": "IN VIA St. Lioba gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1016,
+    "orgName": "INCLUDIO GmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1017,
+    "orgName": "INDEPENDENT LIVING Stiftung - BT Kinderheim Rosengarten",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1018,
+    "orgName": "IndiPaed",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1019,
+    "orgName": "Indimaj. Gesellschaft für Bildung u. Soziales e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1020,
+    "orgName": "Initiative für informelle Bildung gGmbH",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 1791,
+    "orgName": "Haus Kinderland",
+    "status": "success",
+    "enrichedFields": [
+      "employee_count"
+    ],
+    "errors": [],
+    "updates": {
+      "employee_count": 3
+    }
+  },
+  {
+    "orgId": 1816,
+    "orgName": "Kinder- und Jugendhilfe Sonnenland e.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 2270,
+    "orgName": "Stadt Viersen",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 2364,
+    "orgName": "Flüchtlinge Willkommen in Düsseldorf e.V.",
+    "status": "success",
+    "enrichedFields": [
+      "linkedin",
+      "industry",
+      "description"
+    ],
+    "errors": [],
+    "updates": {
+      "linkedin": "https://ca.linkedin.com/company/globalhealthpractices",
+      "industry": "11"
+    },
+    "description": "Flüchtlinge Willkommen in Düsseldorf e.V. bietet geflüchteten Männern aus aller Welt einen sicheren Raum, um sich zu begegnen, sich neu zu orientieren und aktiv am gesellschaftlichen Leben in Düsseldorf teilzunehmen. Die Organisation fördert die Integration von Geflüchteten durch verschiedene Angebote und Veranstaltungen im Welcome Center."
+  },
+  {
+    "orgId": 3061,
+    "orgName": "DEUTSCHES KOMITEE FÜR UNICEF",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 3064,
+    "orgName": "Fairtrade International",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 3066,
+    "orgName": "International Rescue Committee - Germany",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 3067,
+    "orgName": "Aktion Deutschland Hilft E.V.",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 3068,
+    "orgName": "Plan International - Germany",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 3070,
+    "orgName": "Goethe-Institut Germany",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 3075,
+    "orgName": "IPBES - Intergovernmental Science-Policy Platform On Biodiversity And Ecosystem Services",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  },
+  {
+    "orgId": 3077,
+    "orgName": "Islamic Relief Deutschland",
+    "status": "skipped",
+    "enrichedFields": [],
+    "errors": [],
+    "updates": {}
+  }
+]

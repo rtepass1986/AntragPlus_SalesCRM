@@ -16,19 +16,29 @@ interface CSVFieldMapperProps {
   onBack: () => void
 }
 
-// Standard database fields
+// Standard database fields (base + your custom fields)
 const STANDARD_FIELDS = [
   { value: 'company_name', label: 'Firmenname', required: true },
-  { value: 'website', label: 'Website', required: false },
-  { value: 'email', label: 'E-Mail', required: false },
-  { value: 'phone', label: 'Telefon', required: false },
-  { value: 'address', label: 'Adresse', required: false },
-  { value: 'industry', label: 'Branche', required: false },
+  { value: 'address', label: 'Anschrift', required: false },
   { value: 'tätigkeitsfeld', label: 'Tätigkeitsfeld', required: false },
-  { value: 'linkedin_url', label: 'LinkedIn URL', required: false },
-  { value: 'founded_year', label: 'Gründungsjahr', required: false },
-  { value: 'legal_form', label: 'Rechtsform', required: false },
-  { value: 'employees_estimate', label: 'Mitarbeiter (Schätzung)', required: false },
+  
+  // Custom fields from your CSV
+  { value: 'custom:geber', label: '🎯 Geber (Donor)', required: false },
+  { value: 'custom:fördererfahrung', label: '📊 Fördererfahrung', required: false },
+  { value: 'custom:jahr', label: '📅 Jahr', required: false },
+  { value: 'custom:förderzweck', label: '💡 Förderzweck (Purpose)', required: false },
+  { value: 'custom:betrag', label: '💰 Betrag (Amount)', required: false },
+  { value: 'custom:empfaengerid', label: '🆔 Empfänger ID', required: false },
+  
+  // Fields that will be enriched (nicht in CSV)
+  { value: 'website', label: '🔍 Website (via Enrichment)', required: false },
+  { value: 'email', label: '🔍 E-Mail (via Enrichment)', required: false },
+  { value: 'phone', label: '🔍 Telefon (via Enrichment)', required: false },
+  { value: 'linkedin_url', label: '🔍 LinkedIn (via Enrichment)', required: false },
+  { value: 'industry', label: '🔍 Branche (via Enrichment)', required: false },
+  { value: 'founded_year', label: '🔍 Gründungsjahr (via Enrichment)', required: false },
+  { value: 'legal_form', label: '🔍 Rechtsform (via Enrichment)', required: false },
+  { value: 'employees_estimate', label: '🔍 Mitarbeiter (via Enrichment)', required: false },
   { value: 'notes', label: 'Notizen', required: false },
 ]
 
@@ -224,52 +234,89 @@ export function CSVFieldMapper({ csvColumns, onComplete, onBack }: CSVFieldMappe
 function autoDetectField(columnName: string): string {
   const normalized = columnName.toLowerCase().trim()
 
-  // Company name variations
+  // YOUR SPECIFIC CSV FIELDS (Exact match priority)
+  if (normalized === 'firmename' || normalized === 'firmenname') {
+    return 'company_name'
+  }
+  
+  if (normalized === 'anschrift') {
+    return 'address'
+  }
+  
+  if (normalized === 'tätigkeitsfeld') {
+    return 'tätigkeitsfeld'
+  }
+  
+  if (normalized === 'geber') {
+    return 'custom:geber'
+  }
+  
+  if (normalized === 'fördererfahrung' || normalized === 'foerdererfahrung') {
+    return 'custom:fördererfahrung'
+  }
+  
+  if (normalized === 'jahr') {
+    return 'custom:jahr'
+  }
+  
+  if (normalized === 'förderzweck' || normalized === 'foerderzweck') {
+    return 'custom:förderzweck'
+  }
+  
+  if (normalized === 'betrag') {
+    return 'custom:betrag'
+  }
+  
+  if (normalized === 'empfaengerid' || normalized === 'empfängerid') {
+    return 'custom:empfaengerid'
+  }
+
+  // Generic Company name variations
   if (normalized.match(/^(company|name|firma|unternehmen|organization|organisation)$/)) {
     return 'company_name'
   }
 
-  // Website variations
+  // Website variations (will be enriched)
   if (normalized.match(/^(website|url|web|homepage|site)$/)) {
     return 'website'
   }
 
-  // Email variations
+  // Email variations (will be enriched)
   if (normalized.match(/^(email|e-mail|mail|e_mail)$/)) {
     return 'email'
   }
 
-  // Phone variations
+  // Phone variations (will be enriched)
   if (normalized.match(/^(phone|telefon|tel|telephone|fon)$/)) {
     return 'phone'
   }
 
   // Address variations
-  if (normalized.match(/^(address|adresse|anschrift|standort)$/)) {
+  if (normalized.match(/^(address|adresse|standort)$/)) {
     return 'address'
   }
 
-  // Industry variations
+  // Industry variations (will be enriched)
   if (normalized.match(/^(industry|industrie|branche|sektor|sector)$/)) {
     return 'industry'
   }
 
   // Tätigkeitsfeld variations
-  if (normalized.match(/^(tätigkeitsfeld|taetigkeitsfeld|field|bereich|arbeitsbereich)$/)) {
+  if (normalized.match(/^(taetigkeitsfeld|field|bereich|arbeitsbereich)$/)) {
     return 'tätigkeitsfeld'
   }
 
-  // LinkedIn variations
+  // LinkedIn variations (will be enriched)
   if (normalized.match(/^(linkedin|linked_in)$/)) {
     return 'linkedin_url'
   }
 
-  // Legal form variations
+  // Legal form variations (will be enriched)
   if (normalized.match(/^(legal_form|rechtsform|form)$/)) {
     return 'legal_form'
   }
 
-  // Founded year variations
+  // Founded year variations (will be enriched)
   if (normalized.match(/^(founded|founded_year|gründung|gründungsjahr|year)$/)) {
     return 'founded_year'
   }

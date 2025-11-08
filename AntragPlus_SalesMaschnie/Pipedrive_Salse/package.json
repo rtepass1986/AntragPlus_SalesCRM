@@ -1,0 +1,43 @@
+{
+  "name": "pipedrive-sales-sync",
+  "version": "1.0.0",
+  "description": "Serverless sync between Pipedrive and Asana",
+  "main": "src/sync.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "serverless offline",
+    "deploy": "serverless deploy",
+    "deploy:prod": "serverless deploy --stage prod",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "dependencies": {
+    "pg": "^8.11.3",
+    "ulid": "^3.0.1",
+    "undici": "^7.16.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.156",
+    "@types/node": "^20.8.0",
+    "@types/pg": "^8.10.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "esbuild": "^0.25.11",
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "serverless": "^3.40.0",
+    "serverless-esbuild": "^1.55.1",
+    "serverless-offline": "^13.0.0",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [
+    "pipedrive",
+    "asana",
+    "sync",
+    "serverless",
+    "sales"
+  ],
+  "author": "",
+  "license": "MIT"
+}

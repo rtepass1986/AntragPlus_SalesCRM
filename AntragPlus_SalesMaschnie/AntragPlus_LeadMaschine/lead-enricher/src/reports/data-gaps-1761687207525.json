@@ -1,0 +1,661 @@
+{
+  "stats": {
+    "totalDeals": 84,
+    "orgsWithoutWebsite": 0,
+    "orgsWithoutLinkedIn": 17,
+    "orgsWithoutIndustry": 0,
+    "orgsWithoutTatigkeitsfeld": 0,
+    "orgsWithoutContact": 1,
+    "contactsWithoutEmail": 0,
+    "contactsWithoutPhone": 37,
+    "dealsWithoutNotes": 55
+  },
+  "dataGaps": [
+    {
+      "dealId": 2199,
+      "dealTitle": "AHB Kinder- und Jugendhilfe GmbH deal",
+      "orgId": 925,
+      "orgName": "AHB Kinder- und Jugendhilfe GmbH",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn"
+      ]
+    },
+    {
+      "dealId": 2201,
+      "dealTitle": "AJUDA Kinder- und Jugendhilfe GmbH deal",
+      "orgId": 927,
+      "orgName": "AJUDA Kinder- und Jugendhilfe GmbH",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn"
+      ]
+    },
+    {
+      "dealId": 2203,
+      "dealTitle": "Aktion´70 - Jugendhilfe im Verbund e.V. deal",
+      "orgId": 931,
+      "orgName": "Aktion´70 - Jugendhilfe im Verbund e.V.",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn"
+      ]
+    },
+    {
+      "dealId": 2219,
+      "dealTitle": "ANKERPUNKT TWEDT deal",
+      "orgId": 947,
+      "orgName": "ANKERPUNKT TWEDT",
+      "gaps": [
+        "⚠️  Contact: Missing phone"
+      ]
+    },
+    {
+      "dealId": 2222,
+      "dealTitle": "ARNE Kinder- und Jugendhilfe GmbH deal",
+      "orgId": 950,
+      "orgName": "ARNE Kinder- und Jugendhilfe GmbH",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn"
+      ]
+    },
+    {
+      "dealId": 2230,
+      "dealTitle": "Ausbildungswerk Kreuzberg e.V. deal",
+      "orgId": 956,
+      "orgName": "Ausbildungswerk Kreuzberg e.V.",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn"
+      ]
+    },
+    {
+      "dealId": 2236,
+      "dealTitle": "Babylon Kinder- und Jugendhilfe deal",
+      "orgId": 960,
+      "orgName": "Babylon Kinder- und Jugendhilfe",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn"
+      ]
+    },
+    {
+      "dealId": 2240,
+      "dealTitle": "bbw Südhessen  gGmbH deal",
+      "orgId": 966,
+      "orgName": "bbw Südhessen  gGmbH",
+      "gaps": [
+        "⚠️  Contact: Missing phone"
+      ]
+    },
+    {
+      "dealId": 2244,
+      "dealTitle": "Belle Maison GmbH deal",
+      "orgId": 968,
+      "orgName": "Belle Maison GmbH",
+      "gaps": [
+        "⚠️  Contact: Missing phone"
+      ]
+    },
+    {
+      "dealId": 2245,
+      "dealTitle": "Berliner Institut Familie-Schule-Erziehung-Gesundheit deal",
+      "orgId": 971,
+      "orgName": "Berliner Institut Familie-Schule-Erziehung-Gesundheit",
+      "gaps": [
+        "⚠️  Contact: Missing phone"
+      ]
+    },
+    {
+      "dealId": 2272,
+      "dealTitle": "Berliner Institut Familie-Schule-Erziehung-Gesundheit Deal",
+      "orgId": 971,
+      "orgName": "Berliner Institut Familie-Schule-Erziehung-Gesundheit",
+      "gaps": [
+        "⚠️  Contact: Missing phone"
+      ]
+    },
+    {
+      "dealId": 2694,
+      "dealTitle": "ADV gGmbH (Jugendhilfe) Deal",
+      "orgId": 924,
+      "orgName": "ADV gGmbH (Jugendhilfe)",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2700,
+      "dealTitle": "Aktion´70 - Jugendhilfe im Verbund e.V. Deal",
+      "orgId": 931,
+      "orgName": "Aktion´70 - Jugendhilfe im Verbund e.V.",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2701,
+      "dealTitle": "AJUDA Kinder- und Jugendhilfe GmbH Deal",
+      "orgId": 927,
+      "orgName": "AJUDA Kinder- und Jugendhilfe GmbH",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2704,
+      "dealTitle": "Aktive Pädagogik GmbH Deal",
+      "orgId": 930,
+      "orgName": "Aktive Pädagogik GmbH",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2705,
+      "dealTitle": "AHB Kinder- und Jugendhilfe GmbH Deal",
+      "orgId": 925,
+      "orgName": "AHB Kinder- und Jugendhilfe GmbH",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2706,
+      "dealTitle": "ALEP e.V. Deal",
+      "orgId": 935,
+      "orgName": "ALEP e.V.",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2708,
+      "dealTitle": "Albert-Schweitzer-Kinderdorf Berlin e.V. Deal",
+      "orgId": 933,
+      "orgName": "Albert-Schweitzer-Kinderdorf Berlin e.V.",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2709,
+      "dealTitle": "Albert-Schweitzer-Familienwerk e.V. - Jugendprojekte Lüneburg Deal",
+      "orgId": 932,
+      "orgName": "Albert-Schweitzer-Familienwerk e.V. - Jugendprojekte Lüneburg",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2710,
+      "dealTitle": "Alexianer Martinistift GmbH Deal",
+      "orgId": 934,
+      "orgName": "Alexianer Martinistift GmbH",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2711,
+      "dealTitle": "Allerhof GmbH Deal",
+      "orgId": 939,
+      "orgName": "Allerhof GmbH",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2713,
+      "dealTitle": "AMBER gGmbH Deal",
+      "orgId": 938,
+      "orgName": "AMBER gGmbH",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2718,
+      "dealTitle": "ANKERPUNKT TWEDT Deal",
+      "orgId": 947,
+      "orgName": "ANKERPUNKT TWEDT",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2719,
+      "dealTitle": "ANKERPUNKT Kinder- & Jugendhilfe Deal",
+      "orgId": 945,
+      "orgName": "ANKERPUNKT Kinder- & Jugendhilfe",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2724,
+      "dealTitle": "ARNE Kinder- und Jugendhilfe GmbH Deal",
+      "orgId": 950,
+      "orgName": "ARNE Kinder- und Jugendhilfe GmbH",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2725,
+      "dealTitle": "ASB Gemeinnützige Gesellschaft für Kinder-, Jugend- und Familienhilfe im Havelland mbH Deal",
+      "orgId": 951,
+      "orgName": "ASB Gemeinnützige Gesellschaft für Kinder-, Jugend- und Familienhilfe im Havelland mbH",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2727,
+      "dealTitle": "Aufwind Jugendhilfe GmbH Deal",
+      "orgId": 955,
+      "orgName": "Aufwind Jugendhilfe GmbH",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2730,
+      "dealTitle": "Augenblick.UG(haftungsbeschränkt) Deal",
+      "orgId": 954,
+      "orgName": "Augenblick.UG(haftungsbeschränkt)",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2732,
+      "dealTitle": "Ausbildungswerk Kreuzberg e.V. Deal",
+      "orgId": 956,
+      "orgName": "Ausbildungswerk Kreuzberg e.V.",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2735,
+      "dealTitle": "Babylon Kinder- und Jugendhilfe Deal",
+      "orgId": 960,
+      "orgName": "Babylon Kinder- und Jugendhilfe",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2736,
+      "dealTitle": "Balance gGmbH \"Haus an der Polz\" Deal",
+      "orgId": 962,
+      "orgName": "Balance gGmbH \"Haus an der Polz\"",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2737,
+      "dealTitle": "baltic kids gGmbH Deal",
+      "orgId": 963,
+      "orgName": "baltic kids gGmbH",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2738,
+      "dealTitle": "Basislager gGmbH Deal",
+      "orgId": 964,
+      "orgName": "Basislager gGmbH",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2741,
+      "dealTitle": "Bergisches Internat Deal",
+      "orgId": 969,
+      "orgName": "Bergisches Internat",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2742,
+      "dealTitle": "bbw Südhessen  gGmbH Deal",
+      "orgId": 966,
+      "orgName": "bbw Südhessen  gGmbH",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2743,
+      "dealTitle": "Belle Maison GmbH Deal",
+      "orgId": 968,
+      "orgName": "Belle Maison GmbH",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2744,
+      "dealTitle": "Berliner Institut Familie-Schule-Erziehung-Gesundheit Deal",
+      "orgId": 971,
+      "orgName": "Berliner Institut Familie-Schule-Erziehung-Gesundheit",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2749,
+      "dealTitle": "Bethel.regional ; Haus Am Funkturm Deal",
+      "orgId": 976,
+      "orgName": "Bethel.regional ; Haus Am Funkturm",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2752,
+      "dealTitle": "Betreute Wohngruppe Gransee bei Berlin Deal",
+      "orgId": 978,
+      "orgName": "Betreute Wohngruppe Gransee bei Berlin",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2756,
+      "dealTitle": "Bildungsbrücke e.V. Deal",
+      "orgId": 982,
+      "orgName": "Bildungsbrücke e.V.",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn",
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2760,
+      "dealTitle": "Blackbox Jugendhilfe GmbH Deal",
+      "orgId": 986,
+      "orgName": "Blackbox Jugendhilfe GmbH",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn",
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2762,
+      "dealTitle": "Brandenburger Kinderland - Die Jugendhilfe GmbH Deal",
+      "orgId": 989,
+      "orgName": "Brandenburger Kinderland - Die Jugendhilfe GmbH",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn",
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2763,
+      "dealTitle": "Blickpunkt Familie Deal",
+      "orgId": 987,
+      "orgName": "Blickpunkt Familie",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2764,
+      "dealTitle": "BUNT Kinder- und Jugendhilfe gUG Deal",
+      "orgId": 991,
+      "orgName": "BUNT Kinder- und Jugendhilfe gUG",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2765,
+      "dealTitle": "BSH gem. GmbH Jugendhilfe Selbecke Deal",
+      "orgId": 990,
+      "orgName": "BSH gem. GmbH Jugendhilfe Selbecke",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn",
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2767,
+      "dealTitle": "BVH Hanse-Zentrum für Bildung und Jugendförderung gGmbH Deal",
+      "orgId": 994,
+      "orgName": "BVH Hanse-Zentrum für Bildung und Jugendförderung gGmbH",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2768,
+      "dealTitle": "Buntstart Jugend & Familienhilfe Deal",
+      "orgId": 992,
+      "orgName": "Buntstart Jugend & Familienhilfe",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2770,
+      "dealTitle": "BVIK gGmbH- Jugendhilfeverbund Deal",
+      "orgId": 995,
+      "orgName": "BVIK gGmbH- Jugendhilfeverbund",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2771,
+      "dealTitle": "Caiju e.V. Deal",
+      "orgId": 997,
+      "orgName": "Caiju e.V.",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2772,
+      "dealTitle": "Caritas Jugendhilfe Wiesbaden - WG Noah Deal",
+      "orgId": 996,
+      "orgName": "Caritas Jugendhilfe Wiesbaden - WG Noah",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2774,
+      "dealTitle": "Caritas Kinder- und Jugendhaus Mariaschutz Deal",
+      "orgId": 1000,
+      "orgName": "Caritas Kinder- und Jugendhaus Mariaschutz",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2775,
+      "dealTitle": "Casablanca Deal",
+      "orgId": 1001,
+      "orgName": "Casablanca",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2776,
+      "dealTitle": "Cluster Jugendhilfe Deal",
+      "orgId": 1006,
+      "orgName": "Cluster Jugendhilfe",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2777,
+      "dealTitle": "Christiani e.V. Deal",
+      "orgId": 1004,
+      "orgName": "Christiani e.V.",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2778,
+      "dealTitle": "child & parents Pädagogik gGmbH Deal",
+      "orgId": 1003,
+      "orgName": "child & parents Pädagogik gGmbH",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2782,
+      "dealTitle": "Communio-Jugendhilfe Deal",
+      "orgId": 1007,
+      "orgName": "Communio-Jugendhilfe",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2783,
+      "dealTitle": "Compass Psychoziale Praxis gGmbH Deal",
+      "orgId": 1009,
+      "orgName": "Compass Psychoziale Praxis gGmbH",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2784,
+      "dealTitle": "contact - Jugendhilfe und Bildung gGmbH Deal",
+      "orgId": 1010,
+      "orgName": "contact - Jugendhilfe und Bildung gGmbH",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2787,
+      "dealTitle": "IMPULS KBB (g)emeinnützige GmbH Deal",
+      "orgId": 1012,
+      "orgName": "IMPULS KBB (g)emeinnützige GmbH",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2789,
+      "dealTitle": "INCLUDIO GmbH Deal",
+      "orgId": 1016,
+      "orgName": "INCLUDIO GmbH",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2790,
+      "dealTitle": "Impulse Soziale Dienste GmbH & Co.KG Deal",
+      "orgId": 1014,
+      "orgName": "Impulse Soziale Dienste GmbH & Co.KG",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2791,
+      "dealTitle": "INDEPENDENT LIVING Stiftung - BT Kinderheim Rosengarten Deal",
+      "orgId": 1017,
+      "orgName": "INDEPENDENT LIVING Stiftung - BT Kinderheim Rosengarten",
+      "gaps": [
+        "❌ Contact: No contact/person found",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2792,
+      "dealTitle": "IndiPaed Deal",
+      "orgId": 1018,
+      "orgName": "IndiPaed",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 2798,
+      "dealTitle": "Initiative für informelle Bildung gGmbH Deal",
+      "orgId": 1020,
+      "orgName": "Initiative für informelle Bildung gGmbH",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 3563,
+      "dealTitle": "Haus Kinderland Deal",
+      "orgId": 1791,
+      "orgName": "Haus Kinderland",
+      "gaps": [
+        "⚠️  Deal: No notes found"
+      ]
+    },
+    {
+      "dealId": 3589,
+      "dealTitle": "Kinder- und Jugendhilfe Sonnenland e.V. Deal",
+      "orgId": 1816,
+      "orgName": "Kinder- und Jugendhilfe Sonnenland e.V.",
+      "gaps": [
+        "⚠️  Organization: Missing LinkedIn",
+        "⚠️  Contact: Missing phone"
+      ]
+    },
+    {
+      "dealId": 3825,
+      "dealTitle": "BPW Bonn Deal",
+      "orgId": 3284,
+      "orgName": "BPW Bonn",
+      "gaps": [
+        "⚠️  Contact: Missing phone",
+        "⚠️  Deal: No notes found"
+      ]
+    }
+  ]
+}

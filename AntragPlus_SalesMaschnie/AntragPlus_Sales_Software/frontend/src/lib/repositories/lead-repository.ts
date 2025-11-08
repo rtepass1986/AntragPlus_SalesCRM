@@ -206,6 +206,24 @@ export class LeadRepository {
       created_by: 'created_by',
     }
 
+    // Handle custom fields (geber, fördererfahrung, etc.) separately
+    const customFieldData: any = {}
+    
+    if ('geber' in data) customFieldData.geber = data.geber
+    if ('fördererfahrung' in data) customFieldData.fördererfahrung = data.fördererfahrung
+    if ('jahr' in data) customFieldData.jahr = data.jahr
+    if ('förderzweck' in data) customFieldData.förderzweck = data.förderzweck
+    if ('betrag' in data) customFieldData.betrag = data.betrag
+    if ('empfaengerid' in data) customFieldData.empfaengerid = data.empfaengerid
+
+    // Merge custom fields
+    if (Object.keys(customFieldData).length > 0) {
+      fields.push('custom_fields')
+      values.push(JSON.stringify(customFieldData))
+      placeholders.push(`$${paramCount}`)
+      paramCount++
+    }
+
     for (const [key, dbColumn] of Object.entries(fieldMap)) {
       if (key in data && data[key as keyof LeadRow] !== undefined) {
         fields.push(dbColumn)

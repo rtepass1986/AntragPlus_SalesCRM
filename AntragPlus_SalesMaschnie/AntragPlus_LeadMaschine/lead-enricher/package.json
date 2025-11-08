@@ -1,0 +1,45 @@
+{
+  "name": "lead-enricher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r dotenv/config node_modules/ts-node/esm src/index.ts",
+    "dev": "ts-node src/index.ts",
+    "inspect": "ts-node src/inspect-pipedrive.ts",
+    "enrich": "ts-node src/enrich-pipedrive.ts",
+    "enrich:dry": "DRY_RUN=true ts-node src/enrich-pipedrive.ts",
+    "enrich:leadership": "ts-node src/enrich-with-leadership.ts",
+    "enrich:leadership:dry": "DRY_RUN=true ts-node src/enrich-with-leadership.ts",
+    "emails:generate": "ts-node src/create-email-drafts-from-report.ts",
+    "emails:markdown": "ts-node src/create-email-drafts-from-report.ts '' '' markdown",
+    "emails:csv": "ts-node src/create-email-drafts-from-report.ts '' '' csv",
+    "emails:json": "ts-node src/create-email-drafts-from-report.ts '' '' json",
+    "analyze:stage": "ts-node src/analyze-stage-gaps.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.13.0",
+    "cheerio": "^1.1.2",
+    "dotenv": "^17.2.3",
+    "openai": "^6.7.0",
+    "p-queue": "^9.0.0",
+    "papaparse": "^5.5.3",
+    "pino": "^10.1.0",
+    "playwright": "^1.56.1",
+    "robots-txt-parse": "^2.0.1",
+    "tldts": "^7.0.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "validator": "^13.15.20",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "@types/validator": "^13.15.3",
+    "pino-pretty": "^13.1.2"
+  }
+}
