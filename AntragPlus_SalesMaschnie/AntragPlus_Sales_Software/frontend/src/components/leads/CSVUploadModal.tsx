@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react'
 import { XMarkIcon, CloudArrowUpIcon, DocumentTextIcon } from '@heroicons/react/24/outline'
 import { leadsApi } from '@/lib/leads-api'
-import { DragDropFieldMapper, type FieldMapping } from './DragDropFieldMapper'
+import { CSVFieldMapper, type FieldMapping } from './CSVFieldMapper'
 
 interface CSVUploadModalProps {
   isOpen: boolean
@@ -227,10 +227,10 @@ export function CSVUploadModal({ isOpen, onClose, onSuccess }: CSVUploadModalPro
 
             {/* Step 2: Field Mapping */}
             {step === 'mapping' && (
-              <DragDropFieldMapper
+              <CSVFieldMapper
                 csvColumns={csvColumns}
                 onComplete={handleMappingComplete}
-                onCancel={() => {
+                onBack={() => {
                   setStep('upload')
                   setFile(null)
                   setCSVColumns([])

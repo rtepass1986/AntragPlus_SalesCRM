@@ -95,20 +95,10 @@ export function CSVFieldMapper({ csvColumns, onComplete, onBack }: CSVFieldMappe
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h3 className="text-lg font-bold text-gray-900">Schritt 2: Felder zuordnen</h3>
-        <p className="text-sm text-gray-600 mt-1">
-          Ordne jede CSV-Spalte einem Datenbankfeld zu. Automatische Vorschläge sind bereits ausgewählt.
+        <h3 className="text-xl font-bold text-gray-900">Schritt 2: Felder zuordnen</h3>
+        <p className="text-sm text-gray-600 mt-2">
+          Wähle für jede CSV-Spalte das passende Datenbankfeld aus dem Dropdown.
         </p>
-        <div className="mt-3 flex items-start gap-2 p-3 bg-cyan-50 border border-cyan-200 rounded-lg">
-          <span className="text-cyan-600 text-xl flex-shrink-0">💡</span>
-          <div className="text-xs text-cyan-700">
-            <p className="font-semibold mb-1">So funktioniert's:</p>
-            <p>1️⃣ Prüfe die automatischen Zuordnungen</p>
-            <p>2️⃣ Ändere bei Bedarf das Zielfeld</p>
-            <p>3️⃣ Wähle "➕ Neues Feld erstellen" für Custom-Felder</p>
-            <p>4️⃣ Oder "Überspringen" für unwichtige Spalten</p>
-          </div>
-        </div>
       </div>
 
       {/* Required Field Notice */}
@@ -120,43 +110,50 @@ export function CSVFieldMapper({ csvColumns, onComplete, onBack }: CSVFieldMappe
         </div>
       )}
 
-      {/* Mapping List */}
-      <div className="space-y-3">
-        {csvColumns.map((csvCol, index) => (
-          <div key={index} className="rounded-lg border border-gray-200 bg-white p-4">
-            <div className="flex items-center gap-4">
-              {/* CSV Column */}
-              <div className="flex-1">
-                <label className="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1 block">
-                  CSV Spalte
-                </label>
-                <div className="flex items-center gap-2">
-                  <span className="font-mono text-sm font-medium text-gray-900 bg-gray-100 px-3 py-1.5 rounded">
-                    {csvCol}
-                  </span>
-                </div>
+      {/* Mapping List - Simple Left/Right Layout */}
+      <div className="space-y-2">
+        {csvColumns.map((csvCol, index) => {
+          const isUsedByOther = mappings.some((m, i) => i !== index && m.dbField === mappings[index].dbField && m.dbField !== 'skip' && m.dbField !== 'new')
+          
+          return (
+            <div key={index} className="flex items-center gap-4 p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-300 transition-colors">
+              {/* Left: CSV Column Name */}
+              <div className="w-1/3">
+                <span className="font-mono text-sm font-semibold text-gray-900 bg-blue-50 px-3 py-2 rounded block text-center">
+                  {csvCol}
+                </span>
               </div>
 
               {/* Arrow */}
               <ArrowRightIcon className="h-5 w-5 text-gray-400 flex-shrink-0" />
 
-              {/* DB Field Selection */}
+              {/* Right: Dropdown */}
               <div className="flex-1">
-                <label className="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1 block">
-                  Zuordnen zu
-                </label>
                 <select
                   value={mappings[index].dbField}
                   onChange={(e) => handleMappingChange(index, e.target.value)}
-                  className="w-full rounded-lg border border-gray-300 px-3 py-1.5 text-sm focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                  className={`w-full rounded-lg border px-4 py-2 text-sm font-medium focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 ${
+                    mappings[index].dbField === 'skip' 
+                      ? 'border-gray-300 text-gray-500' 
+                      : isUsedByOther
+                      ? 'border-orange-300 bg-orange-50 text-orange-700'
+                      : 'border-green-300 bg-green-50 text-green-700'
+                  }`}
                 >
-                  <option value="skip">Überspringen</option>
+                  <option value="skip">— Überspringen —</option>
                   <optgroup label="Standard Felder">
-                    {STANDARD_FIELDS.map(field => (
-                      <option key={field.value} value={field.value}>
-                        {field.label} {field.required ? '(Pflicht)' : ''}
-                      </option>
-                    ))}
+                    {STANDARD_FIELDS.map(field => {
+                      const alreadyMapped = mappings.some((m, i) => i !== index && m.dbField === field.value)
+                      return (
+                        <option 
+                          key={field.value} 
+                          value={field.value}
+                          disabled={alreadyMapped}
+                        >
+                          {field.label} {field.required ? '(Pflicht)' : ''} {alreadyMapped ? '(Bereits gemappt)' : ''}
+                        </option>
+                      )
+                    })}
                   </optgroup>
                   <option value="new">➕ Neues Feld erstellen...</option>
                 </select>
