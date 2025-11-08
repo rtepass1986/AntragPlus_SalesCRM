@@ -143,7 +143,9 @@ export function CSVUploadModal({ isOpen, onClose, onSuccess }: CSVUploadModalPro
       
       {/* Modal */}
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none">
-        <div className="bg-white rounded-xl shadow-2xl w-full max-w-lg pointer-events-auto">
+        <div className={`bg-white rounded-xl shadow-2xl pointer-events-auto max-h-[90vh] flex flex-col ${
+          step === 'mapping' ? 'w-full max-w-4xl' : 'w-full max-w-2xl'
+        }`}>
           {/* Header */}
           <div className="flex items-center justify-between border-b border-gray-200 px-6 py-4">
             <h2 className="text-xl font-bold text-gray-900">CSV hochladen</h2>
