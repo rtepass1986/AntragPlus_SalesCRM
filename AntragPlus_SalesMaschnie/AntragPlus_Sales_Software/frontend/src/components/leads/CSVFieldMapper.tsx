@@ -195,7 +195,8 @@ export function CSVFieldMapper({ csvColumns, onComplete, onBack }: CSVFieldMappe
               </div>
             )}
           </div>
-        ))}
+          )
+        })}
       </div>
 
       {/* Summary */}
