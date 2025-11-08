@@ -95,10 +95,20 @@ export function CSVFieldMapper({ csvColumns, onComplete, onBack }: CSVFieldMappe
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h3 className="text-lg font-bold text-gray-900">CSV Felder zuordnen</h3>
+        <h3 className="text-lg font-bold text-gray-900">Schritt 2: Felder zuordnen</h3>
         <p className="text-sm text-gray-600 mt-1">
-          Ordne die CSV-Spalten den Datenbank-Feldern zu. Du kannst auch neue Felder erstellen.
+          Ordne jede CSV-Spalte einem Datenbankfeld zu. Automatische Vorschläge sind bereits ausgewählt.
         </p>
+        <div className="mt-3 flex items-start gap-2 p-3 bg-cyan-50 border border-cyan-200 rounded-lg">
+          <span className="text-cyan-600 text-xl flex-shrink-0">💡</span>
+          <div className="text-xs text-cyan-700">
+            <p className="font-semibold mb-1">So funktioniert's:</p>
+            <p>1️⃣ Prüfe die automatischen Zuordnungen</p>
+            <p>2️⃣ Ändere bei Bedarf das Zielfeld</p>
+            <p>3️⃣ Wähle "➕ Neues Feld erstellen" für Custom-Felder</p>
+            <p>4️⃣ Oder "Überspringen" für unwichtige Spalten</p>
+          </div>
+        </div>
       </div>
 
       {/* Required Field Notice */}

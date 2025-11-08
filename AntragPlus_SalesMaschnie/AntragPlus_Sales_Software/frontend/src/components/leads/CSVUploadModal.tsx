@@ -202,15 +202,24 @@ export function CSVUploadModal({ isOpen, onClose, onSuccess }: CSVUploadModalPro
 
                 {/* CSV Format Help */}
                 <div className="mt-6 rounded-lg bg-blue-50 border border-blue-200 p-4">
-                  <h4 className="text-sm font-semibold text-blue-900 mb-2">CSV-Format</h4>
-                  <p className="text-xs text-blue-700 mb-2">
-                    Ihre CSV-Datei sollte folgende Spalten enthalten:
-                  </p>
-                  <div className="text-xs text-blue-600 font-mono bg-white rounded p-2">
-                    company,website,email,phone,address
+                  <h4 className="text-sm font-semibold text-blue-900 mb-2">📋 CSV Upload - Beliebige Spalten!</h4>
+                  <div className="space-y-2 text-xs text-blue-700">
+                    <p>✅ <strong>Beliebige CSV-Datei hochladen</strong></p>
+                    <p>✅ <strong>Alle Spalten werden akzeptiert</strong></p>
+                    <p>✅ <strong>Im nächsten Schritt:</strong> Du ordnest jede Spalte zu</p>
+                    <p>✅ <strong>Auto-Detection</strong> schlägt Zuordnungen vor</p>
+                    <p>✅ <strong>Neue Felder erstellen</strong> möglich</p>
                   </div>
-                  <p className="text-xs text-blue-600 mt-2">
-                    💡 Andere Spaltennamen werden automatisch erkannt
+                  
+                  <div className="mt-3 pt-3 border-t border-blue-300">
+                    <p className="text-xs text-blue-900 font-medium mb-1">Empfohlene Spalten:</p>
+                    <div className="text-xs text-blue-600 font-mono bg-white rounded p-2 whitespace-nowrap overflow-x-auto">
+                      Firmename,Geber,Fördererfahrung,jahr,anschrift,Tätigkeitsfeld,Förderzweck,betrag,empfaengerid
+                    </div>
+                  </div>
+                  
+                  <p className="mt-3 text-xs text-blue-600">
+                    💡 <strong>Deal Value = 10% vom betrag</strong> • Fehlende Daten via Enrichment
                   </p>
                 </div>
               </>
