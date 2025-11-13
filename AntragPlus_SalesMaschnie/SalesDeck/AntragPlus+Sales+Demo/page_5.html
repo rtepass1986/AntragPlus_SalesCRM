@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Was wir tun - AntragPlus Lösung</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script src="https://cdn.tailwindcss.com"></script><style>
+    body {overflow: hidden; width: 1280px; 
+        min-height: 720px; 
+        margin: 0;
+        padding: 0;}
+    .slide {
+        width: 1280px;
+        min-height: 720px;
+        position: relative;
+    }
+    .meta-blue {
+        color: #406ADF;
+    }
+    .bg-meta-blue {
+        background-color: #406ADF;
+    }
+    .geometric-pattern {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.05;
+        background-image: 
+            linear-gradient(45deg, #406ADF 25%, transparent 25%), 
+            linear-gradient(-45deg, #406ADF 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #406ADF 75%),
+            linear-gradient(-45deg, transparent 75%, #406ADF 75%);
+        background-size: 20px 20px;
+        z-index: 1;
+    }
+    .gradient-bar {
+        background: linear-gradient(90deg, #406ADF 0%, #7892E3 100%);
+    }
+    .solution-card {
+        transition: all 0.3s ease;
+        border-left: 4px solid #406ADF;
+    }
+    .solution-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    .icon-circle {
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #406ADF 0%, #7892E3 100%);
+        color: white;
+        font-size: 24px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .page-number {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 1rem;
+        color: #6B7280;
+        z-index: 20;
+    }
+    .content-container {
+        z-index: 10;
+        position: relative;
+    }
+    @font-face {
+        font-family: 'Inter';
+        src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    }
+
+html {
+    overflow: hidden;
+}</style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.bottom-0{bottom:0px}.left-0{left:0px}.right-0{right:0px}.z-10{z-index:10}.mx-2{margin-left:0.5rem;margin-right:0.5rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.ml-3{margin-left:0.75rem}.mr-6{margin-right:1.5rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.grid{display:grid}.h-1{height:0.25rem}.h-3{height:0.75rem}.h-8{height:2rem}.w-16{width:4rem}.w-2{width:0.5rem}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.gap-8{gap:2rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-3{padding:0.75rem}.p-6{padding:1.5rem}.px-16{padding-left:4rem;padding-right:4rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pt-12{padding-top:3rem}.pt-4{padding-top:1rem}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}</style></head>
+<body class="">
+<div class="slide bg-white font-sans" style=" overflow: hidden;">
+<!-- Geometric pattern background -->
+<div class="geometric-pattern"></div>
+<!-- Header -->
+<div class="relative z-10 px-16 pt-12">
+<div class="flex items-center">
+<div class="gradient-bar h-8 w-2 mr-6"></div>
+<h1 class="text-4xl font-bold text-gray-800">Was wir tun - AntragPlus Lösung</h1>
+</div>
+</div>
+<!-- Subtitle -->
+<div class="px-16 pt-4">
+<p class="text-2xl text-gray-600 font-light">Vollständige Automatisierung des Förderprozesses für gemeinnützige Organisationen</p>
+<div class="flex items-center mt-2">
+<div class="h-1 w-16 bg-meta-blue"></div>
+<p class="ml-3 text-xl font-semibold meta-blue">komplett kostenlos</p>
+</div>
+</div>
+<!-- Main content -->
+<div class="content-container px-16 py-8">
+<div class="grid grid-cols-3 gap-8 mt-6">
+<!-- Solution Step 1 -->
+<div class="solution-card bg-white p-6 rounded-lg shadow-md">
+<div class="flex flex-col items-center text-center mb-4">
+<div class="icon-circle mb-4">
+<i class="fas fa-search"></i>
+</div>
+<h3 class="text-2xl font-semibold meta-blue mb-2">Fördermittel finden</h3>
+</div>
+<p class="text-gray-700 text-lg">Wir helfen gemeinnützigen Organisationen, passende Fördermittel zu finden, die zu ihren Projekten passen.</p>
+</div>
+<!-- Solution Step 2 -->
+<div class="solution-card bg-white p-6 rounded-lg shadow-md">
+<div class="flex flex-col items-center text-center mb-4">
+<div class="icon-circle mb-4">
+<i class="fas fa-file-alt"></i>
+</div>
+<h3 class="text-2xl font-semibold meta-blue mb-2">Anträge beantragen</h3>
+</div>
+<p class="text-gray-700 text-lg">Erfolgreiche Beantragung der Fördermittel durch gezielte Unterstützung bei der Antragstellung.</p>
+</div>
+<!-- Solution Step 3 -->
+<div class="solution-card bg-white p-6 rounded-lg shadow-md">
+<div class="flex flex-col items-center text-center mb-4">
+<div class="icon-circle mb-4">
+<i class="fas fa-chart-line"></i>
+</div>
+<h3 class="text-2xl font-semibold meta-blue mb-2">Stresslose Abrechnung</h3>
+</div>
+<p class="text-gray-700 text-lg">Wir übernehmen die komplette Abrechnung und Verwendungsnachweise ohne großen Aufwand für Sie.</p>
+</div>
+</div>
+<!-- Process flow visualization -->
+<div class="mt-12 flex justify-center">
+<div class="flex items-center">
+<div class="bg-meta-blue text-white p-3 rounded-lg">
+<i class="fas fa-lightbulb"></i>
+</div>
+<div class="h-1 w-16 bg-meta-blue"></div>
+<div class="bg-meta-blue text-white p-3 rounded-lg">
+<i class="fas fa-cogs"></i>
+</div>
+<div class="h-1 w-16 bg-meta-blue"></div>
+<div class="bg-meta-blue text-white p-3 rounded-lg">
+<i class="fas fa-check-circle"></i>
+</div>
+<div class="h-1 w-16 bg-meta-blue"></div>
+<div class="bg-meta-blue text-white p-3 rounded-lg">
+<i class="fas fa-handshake"></i>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-2">
+<div class="text-center px-6 py-2 bg-white rounded-full shadow-sm mx-2">
+<p class="font-medium">Identifikation</p>
+</div>
+<div class="text-center px-6 py-2 bg-white rounded-full shadow-sm mx-2">
+<p class="font-medium">Vorbereitung</p>
+</div>
+<div class="text-center px-6 py-2 bg-white rounded-full shadow-sm mx-2">
+<p class="font-medium">Einreichung</p>
+</div>
+<div class="text-center px-6 py-2 bg-white rounded-full shadow-sm mx-2">
+<p class="font-medium">Betreuung</p>
+</div>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute bottom-0 left-0 right-0 gradient-bar h-3 z-10"></div>
+<!-- Page number -->
+<div class="page-number" style="visibility: hidden;">5 / 10</div>
+</div>
+
+</body></html>

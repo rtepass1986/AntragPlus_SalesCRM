@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nächste Schritte - Gemeinsam starten</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script src="https://cdn.tailwindcss.com"></script><style>
+    body {overflow: hidden; width: 1280px; 
+        min-height: 720px; 
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;}
+    .slide {
+        width: 1280px;
+        min-height: 720px;
+        position: relative;
+    }
+    .meta-blue {
+        color: #406ADF;
+    }
+    .bg-meta-blue {
+        background-color: #406ADF;
+    }
+    .geometric-pattern {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.05;
+        background-image: 
+            linear-gradient(45deg, #406ADF 25%, transparent 25%), 
+            linear-gradient(-45deg, #406ADF 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #406ADF 75%),
+            linear-gradient(-45deg, transparent 75%, #406ADF 75%);
+        background-size: 20px 20px;
+        z-index: 1;
+    }
+    .gradient-bar {
+        background: linear-gradient(90deg, #406ADF 0%, #7892E3 100%);
+    }
+    .step-item {
+        transition: all 0.3s ease;
+    }
+    .step-item:hover {
+        transform: translateY(-3px);
+    }
+    .page-number {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 1rem;
+        color: #6B7280;
+        z-index: 20;
+    }
+    .step-circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #406ADF 0%, #7892E3 100%);
+        box-shadow: 0 4px 10px rgba(64, 106, 223, 0.3);
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .step-connector {
+        width: 3px;
+        background: linear-gradient(to bottom, #406ADF 0%, #7892E3 100%);
+        margin-left: 28px;
+    }
+    .action-card {
+        border-left: 4px solid #406ADF;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+    }
+    .action-card:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    .content-container {
+        z-index: 10;
+        position: relative;
+    }
+
+html {
+    overflow: hidden;
+}</style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.bottom-0{bottom:0px}.left-0{left:0px}.right-0{right:0px}.z-10{z-index:10}.col-span-2{grid-column:span 2 / span 2}.col-span-3{grid-column:span 3 / span 3}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.ml-4{margin-left:1rem}.mr-2{margin-right:0.5rem}.mr-3{margin-right:0.75rem}.mr-6{margin-right:1.5rem}.mt-1{margin-top:0.25rem}.mt-8{margin-top:2rem}.flex{display:flex}.grid{display:grid}.h-3{height:0.75rem}.h-6{height:1.5rem}.h-8{height:2rem}.w-2{width:0.5rem}.grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.gap-4{gap:1rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.rounded-lg{border-radius:0.5rem}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-6{padding:1.5rem}.px-16{padding-left:4rem;padding-right:4rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pt-12{padding-top:3rem}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}</style></head>
+<body class="">
+<div class="slide bg-white font-sans" style=" overflow: hidden;">
+<!-- Geometric pattern background -->
+<div class="geometric-pattern"></div>
+<!-- Header -->
+<div class="relative z-10 px-16 pt-12">
+<div class="flex items-center">
+<div class="gradient-bar h-8 w-2 mr-6"></div>
+<h1 class="text-4xl font-bold text-gray-800">Nächste Schritte - Gemeinsam starten</h1>
+</div>
+</div>
+<!-- Main content -->
+<div class="content-container px-16 py-8">
+<div class="grid grid-cols-5 gap-4">
+<!-- Left side: Step by step process -->
+<div class="col-span-3">
+<h2 class="text-2xl font-semibold meta-blue mb-6">So geht&#39;s weiter</h2>
+<div class="flex flex-col">
+<!-- Step 1 -->
+<div class="step-item flex mb-2">
+<div class="step-circle">1</div>
+<div class="ml-4">
+<h3 class="text-xl font-semibold text-gray-800">Vertragsabschluss</h3>
+<p class="text-gray-600">Ich schicke Ihnen den Vertragsentwurf per E-Mail mit Link zum Upload-Portal</p>
+</div>
+</div>
+<div class="step-connector h-6"></div>
+<!-- Step 2 -->
+<div class="step-item flex mb-2">
+<div class="step-circle">2</div>
+<div class="ml-4">
+<h3 class="text-xl font-semibold text-gray-800">Vorbereitung</h3>
+<p class="text-gray-600">Sie laden Projektideen und Unterlagen im System hoch</p>
+</div>
+</div>
+<div class="step-connector h-6"></div>
+<!-- Step 3 -->
+<div class="step-item flex mb-2">
+<div class="step-circle">3</div>
+<div class="ml-4">
+<h3 class="text-xl font-semibold text-gray-800">Follow-Up-Termin</h3>
+<p class="text-gray-600">Zusammen besprechen wir den Vertrag und Ihre Zusammenarbeit</p>
+</div>
+</div>
+<div class="step-connector h-6"></div>
+<!-- Step 4 -->
+<div class="step-item flex">
+<div class="step-circle">4</div>
+<div class="ml-4">
+<h3 class="text-xl font-semibold text-gray-800">Kick-off-Meeting</h3>
+<p class="text-gray-600">Wir zeigen Ihnen, wie Sie in AntragPlus starten</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right side: Call to action -->
+<div class="col-span-2">
+<h2 class="text-2xl font-semibold meta-blue mb-6">Jetzt gemeinsam starten</h2>
+<div class="action-card p-6 rounded-lg mb-6">
+<div class="flex items-center mb-4">
+<i class="fas fa-calendar-alt text-2xl meta-blue mr-3"></i>
+<h3 class="text-xl font-semibold text-gray-800">Terminvereinbarung</h3>
+</div>
+<p class="text-gray-600 mb-3">Wir vereinbaren einen Follow-Up-Termin innerhalb der nächsten 7 Tage</p>
+<div class="flex items-center text-gray-500">
+<i class="fas fa-clock mr-2"></i>
+<span>Bitte wählen Sie eine passende Uhrzeit</span>
+</div>
+</div>
+<div class="action-card p-6 rounded-lg">
+<div class="flex items-center mb-4">
+<i class="fas fa-check-circle text-2xl meta-blue mr-3"></i>
+<h3 class="text-xl font-semibold text-gray-800">Klar definierte Schritte</h3>
+</div>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start">
+<i class="fas fa-check text-sm meta-blue mt-1 mr-2"></i>
+<span>Keine versteckten Kosten</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check text-sm meta-blue mt-1 mr-2"></i>
+<span>Keine verbindlichen Commitments</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check text-sm meta-blue mt-1 mr-2"></i>
+<span>100% kostenlose Beratung</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Bottom section -->
+<div class="mt-8 text-center">
+<p class="text-2xl font-medium text-gray-700">
+<i class="fas fa-handshake meta-blue mr-2"></i>
+                    Fantastisch, dann freue ich mich auf die Zusammenarbeit mit Ihnen!
+                </p>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute bottom-0 left-0 right-0 gradient-bar h-3 z-10"></div>
+<!-- Page number -->
+<div class="page-number" style="visibility: hidden;">10 / 10</div>
+</div>
+
+</body></html>

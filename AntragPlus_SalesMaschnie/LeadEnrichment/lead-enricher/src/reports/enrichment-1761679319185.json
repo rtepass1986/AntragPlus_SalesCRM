@@ -1,0 +1,110 @@
+[
+  {
+    "orgId": 1816,
+    "orgName": "Kinder- und Jugendhilfe Sonnenland e.V.",
+    "status": "success",
+    "enrichedFields": [
+      "industry",
+      "taetigkeitsfeld"
+    ],
+    "errors": [],
+    "updates": {
+      "industry": "11",
+      "d0ff2ebd4d3c12b3f1faad65b409a8e578d657a3": "45"
+    }
+  },
+  {
+    "orgId": 2270,
+    "orgName": "Stadt Viersen",
+    "status": "success",
+    "enrichedFields": [
+      "linkedin",
+      "industry",
+      "taetigkeitsfeld"
+    ],
+    "errors": [],
+    "updates": {
+      "linkedin": "https://www.linkedin.com/company/ea-elektro-automatik",
+      "industry": "11",
+      "d0ff2ebd4d3c12b3f1faad65b409a8e578d657a3": "46"
+    }
+  },
+  {
+    "orgId": 3061,
+    "orgName": "DEUTSCHES KOMITEE FÜR UNICEF",
+    "status": "success",
+    "enrichedFields": [
+      "contact_info",
+      "linkedin",
+      "industry",
+      "taetigkeitsfeld",
+      "description"
+    ],
+    "errors": [],
+    "updates": {
+      "linkedin": "https://www.linkedin.com/company/unicef",
+      "industry": "11",
+      "d0ff2ebd4d3c12b3f1faad65b409a8e578d657a3": "45"
+    },
+    "contactInfo": {
+      "emails": [
+        "adresspflege@unicef.de",
+        "spendenservice@unicef.de",
+        "youth@unicef.de",
+        "engagiert@unicef.de",
+        "berlin@bitgrip.dewebsite",
+        "info@profihost.comwebsite",
+        "mail@unicef.dedatenschutzerkl",
+        "mail@unicef.de",
+        "berlin@bitgrip.de",
+        "info@profihost.com",
+        "93650-285info@unicef.deunicef",
+        "93650-603grusskarten@unicef.dekontakt",
+        "93650-399dauerspende@unicef.dekontakt",
+        "93650-399spendenservice@unicef.dekontakt",
+        "93650-399adresspflege@unicef.dekontakt",
+        "presse@unicef.dechristine",
+        "nothilfe030-275807919presse@unicef.de",
+        "presse@unicef.deadvocacy",
+        "politikbueroberlin@unicef.desusanne",
+        "hilfeinfo@unicef.dedesire"
+      ],
+      "phones": [
+        "57 3702 0500 0000 3000 00",
+        "123 049 237",
+        "2009-2569/",
+        "2022-05-14",
+        "2025-09-17",
+        "0221 / 93650-399",
+        "3551580",
+        "2025-09-01",
+        "2025-10-16",
+        "876931/",
+        "10450969",
+        "0221-93650-0",
+        "0221-93650-279",
+        "104 50969",
+        "17010707",
+        "130539",
+        "2022-08-26",
+        "0221/93650-285",
+        "0221/93650-603",
+        "0221/93650-399",
+        "0221-93650-298",
+        "030-275807919",
+        "0221-93650-315",
+        "0221/93 650-611",
+        "+49 (0)30 275 807-917",
+        "0221 93650-272",
+        "399694/",
+        "2023-03-31",
+        "3551581",
+        "2024-03-07",
+        "247520/",
+        "2022-08-04",
+        "2022-05-20"
+      ]
+    },
+    "description": "Das Deutsche Komitee für UNICEF setzt sich für die Rechte von Kindern und Jugendlichen ein und unterstützt deren Entwicklung durch verschiedene Programme. Die Organisation arbeitet eng mit der deutschen Regierung und anderen Partnern zusammen, um die Lebensbedingungen von benachteiligten Kindern weltweit zu verbessern."
+  }
+]
